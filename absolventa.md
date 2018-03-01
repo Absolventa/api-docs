@@ -55,7 +55,11 @@ nowadays is sometimes called `HR Open Standards`.
       <td>/api/r/job_offers/{id}/quit.xml</td>
       <td>
         If you want to unpublish a job offer at a specific point in time you can submit your
-        requested datetime like this attached to the request: `<ended_at>2019-01-01</ended_at>`. Note that your requested date has to
+        requested datetime like this attached to the request:
+        ```XML
+        <ended_at>2019-01-01</ended_at>
+        ```
+        Note that your requested date has to
         be before the job offer's current value of ended_at.
       </td>
     </tr>
