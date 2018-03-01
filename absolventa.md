@@ -4,8 +4,8 @@ https://www.absolventa.de
 
 ## RESTful API
 
-Our RESTful API accepts two different formats based on XML
-to manage your job offers headlessly: `AbsolventaXML` and `HR-XML`, which
+Our RESTful API accepts two different XML based data formats
+to manage your job offers headlessly: `Absolventa XML` and `HR-XML`, which
 nowadays is sometimes called `HR Open Standards`.
 
 ### Endpoints
