@@ -77,7 +77,7 @@ nowadays is sometimes called `HR Open Standards`.
 
 After your account manager has handed out you your API key, please
 provide it as username for HTTP Basic Authentication. Leave the password
-blank for fill it with fallback letter "X".
+blank or fill it with a fallback letter like <code>"X"</code>
 
 ### Data formats
 
@@ -85,7 +85,6 @@ blank for fill it with fallback letter "X".
 
 ```XML
 <job_offer>
-  <id type="integer">12345</id>
   <mode>premium</mode>
   <title>Trainee Web Development (m/w)</title>
   <external_url>https://example.com/jobs/1</external_url>
@@ -118,6 +117,7 @@ blank for fill it with fallback letter "X".
  <PositionPostings>
    <PositionPosting>
      <Id validFrom="2017-01-03" validTo="2017-12-10">
+       <!-- Note that the ID is auto-assigned when using the RESTful API -->
        <IdValue>12345</IdValue>
      </Id>
      <Link><![CDATA[https://example.com/jobs/1]]></Link>
