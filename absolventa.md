@@ -1,6 +1,6 @@
 # ABSOLVENTA
 
-Public website: https://www.absolventa.de
+https://www.absolventa.de
 
 # RESTful API
 
@@ -15,7 +15,7 @@ nowadays is sometimes called `HR Open Standards`.
       <th>Action</th>
       <th>Format</th>
       <th>HTTP method</th>
-      <th>URL</th>
+      <th>ENDPOINT</th>
     </tr>
   </thead>
   <tbody>
