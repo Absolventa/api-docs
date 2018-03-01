@@ -56,9 +56,9 @@ nowadays is sometimes called `HR Open Standards`.
       <td>
         If you want to unpublish a job offer at a specific point in time you can submit your
         requested datetime like this attached to the request:
-        ```XML
-        <ended_at>2019-01-01</ended_at>
-        ```
+        <code>
+          &ltended_at&gt2019-01-01&lt/ended_at&gt
+        </code>
         Note that your requested date has to
         be before the job offer's current value of ended_at.
       </td>
