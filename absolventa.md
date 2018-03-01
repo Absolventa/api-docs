@@ -2,13 +2,13 @@
 
 https://www.absolventa.de
 
-# RESTful API
+## RESTful API
 
 Our RESTful API accepts two different formats based on XML
 to manage your job offers headlessly: `AbsolventaXML` and `HR-XML`, which
 nowadays is sometimes called `HR Open Standards`.
 
-## Endpoints
+### Endpoints
 <table>
   <thead>
     <tr>
@@ -52,15 +52,15 @@ nowadays is sometimes called `HR Open Standards`.
   </tbody>
 </table>
 
-## Authentication
+### Authentication
 
 After your account manager has handed out you your API key, please
 provide it as username for HTTP Basic Authentication. Leave the password
 blank for fill it with fallback letter "X".
 
-## Data formats
+### Data formats
 
-### Absolventa XML
+#### Absolventa XML
 
 ```XML
 <job_offer>
@@ -91,14 +91,9 @@ blank for fill it with fallback letter "X".
 </job_offer>
 ```
 
-### HR-XML 
+#### HR-XML
 ```XML
 <PositionOpening>
- <PositionRecordInfo>
-   <Id idOwner="Threepwod Ventures">
-     <IdValue>12345</IdValue>
-   </Id>
- </PositionRecordInfo>
  <PositionPostings>
    <PositionPosting>
      <Id validFrom="2017-01-03" validTo="2017-12-10">
@@ -108,11 +103,7 @@ blank for fill it with fallback letter "X".
    </PositionPosting>
  </PositionPostings>
  <PositionProfile>
-   <PositionDateInfo></PositionDateInfo>
    <PositionDetail>
-     <Company>
-       <Name>Threepwood Ventures</Name>
-     </Company>
      <PhysicalLocation>
        <PostalAddress>
          <CountryCode>DE</CountryCode>
@@ -171,6 +162,6 @@ blank for fill it with fallback letter "X".
   </PositionProfile>
 </PositionOpening>
 ```
-# Pull API
+## Pull API
 
 TODO: Fill me.
