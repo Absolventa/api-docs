@@ -217,7 +217,7 @@ Our application is able to process data streams served via HTTP of different for
 jobs wrapped into a custom data stream ready to read via HTTP, please [contact our team](mailto:api@absolventa.de) to verify
 if we can handle it.
 
-Here's an ideal XML feed for our application ABSOLVENTA. If you are able to provide your job
+Here's an ideal XML feed for our application TRAINEE-GEFLÜSTER. If you are able to provide your job
 data in this format, we can immediately configure a connection:
 ```XML
 <?xml version='1.0' encoding='utf-8' ?>
