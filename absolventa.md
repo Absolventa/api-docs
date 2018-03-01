@@ -21,25 +21,25 @@ nowadays is sometimes called `HR Open Standards`.
   </thead>
   <tbody>
     <tr>
-      <td>List all job offers that are available to be listed in our public search interface</td>
+      <td>List published</td>
       <td>Absolventa XML</td>
       <td>GET</td>
       <td>/api/r/job_offers.xml</td>
-      <td></td>
+      <td>List all job offers that are available to be listed in our public search interface</td>
     </tr>
     <tr>
-      <td>List all job offers that are drafts (⇔ unpublished) and therefore haven't been available to be listed in our publich search interface yet</td>
+      <td>List drafts</td>
       <td>Absolventa XML</td>
       <td>GET</td>
       <td>/api/r/job_offers/draft.xml</td>
-      <td></td>
+      <td>List all job offers that are drafts (⇔ unpublished) and therefore haven't been available to be listed in our publich search interface yet</td>
     </tr>
     <tr>
-      <td>List all job offers that are not available to be listed in our public search interface any longer because their ended_at value refers to a date in the past</td>
+      <td>List expired</td>
       <td>Absolventa XML</td>
       <td>GET</td>
       <td>/api/r/job_offers/expired.xml</td>
-      <td></td>
+      <td>List all job offers that are not available to be listed in our public search interface any longer because their ended_at value refers to a date in the past</td>
     </tr>
     <tr>
       <td>Creation of a new job offer</td>
