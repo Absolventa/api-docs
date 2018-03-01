@@ -185,13 +185,12 @@ blank or fill it with a fallback letter like <code>"X"</code>
 ```
 ## Pull API
 
-Our application is able to process data streams of different format. If you already have your
-jobs wrapped into a custom data stream, please [contact our team](mailto:api@absolventa.de) to verify
+Our application is able to process data streams served via HTTP of different format. If you already have your
+jobs wrapped into a custom data stream ready to read via HTTP, please [contact our team](mailto:api@absolventa.de) to verify
 if we can handle it.
 
 Here's an ideal XML feed for our application ABSOLVENTA. If you are able to provide your job
 data in this format, we can immediately configure a connection:
-
 ```XML
 <?xml version='1.0' encoding='utf-8' ?>
 <job_offers type='array'>
