@@ -108,6 +108,10 @@ blank or fill it with a fallback letter like <code>"X"</code>
       <country>Deutschland</country>
     </job_offer_location>
   </job_offer_locations>
+  <contact_name>Rosi Beckers</contact_name>
+  <contact_email>rosi.beckers@absolventa.de</contact_email>
+  <contact_phone>030240483121</contact_name>
+  <contact_position>Leitung Personalwesen</contact_position>
   <trainee_gefluester>true</trainee_gefluester>
   <use_responsive_template>true</use_responsive_template>
   <height>1200</height>
