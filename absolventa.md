@@ -239,4 +239,4 @@ data in this format, we can immediately configure a connection:
     ...
   </job_offer>
 </job_offers>
-```XML
+```
