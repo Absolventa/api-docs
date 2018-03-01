@@ -16,6 +16,7 @@ nowadays is sometimes called `HR Open Standards`.
       <th>Format</th>
       <th>HTTP method</th>
       <th>ENDPOINT</th>
+      <th>Further Notes</th>
     </tr>
   </thead>
   <tbody>
@@ -24,30 +25,46 @@ nowadays is sometimes called `HR Open Standards`.
       <td>Absolventa XML</td>
       <td>POST</td>
       <td>/api/r/job_offers.xml</td>
+      <td></td>
     </tr>
     <tr>
       <td>Creation of a new job offer</td>
       <td>HR-XML</td>
       <td>POST</td>
       <td>/api/r/hrxml/job_offers.xml</td>
+      <td></td>
     </tr>
     <tr>
       <td>Update of an existing job offer</td>
       <td>Absolventa XML</td>
       <td>PUT</td>
       <td>/api/r/job_offers/{id}.xml</td>
+      <td></td>
     </tr>
     <tr>
       <td>Update of an existing job offer</td>
       <td>HR-XML</td>
       <td>PUT</td>
       <td>/api/r/hrxml/job_offers/{id}.xml</td>
+      <td></td>
     </tr>
     <tr>
       <td>Ending a job offer</td>
       <td>Absolventa XML or HR-XML</td>
       <td>PUT</td>
-      <td>/api/r/job_offers/{id}.xml</td>
+      <td>/api/r/job_offers/{id}/quit.xml</td>
+      <td>
+        If you want to unpublish a job offer at a specific point in time you can submit your
+        requested datetime like this attached to the request: `<ended_at>2019-01-01</ended_at>`. Note that your requested date has to
+        be before the job offer's current value of ended_at.
+      </td>
+    </tr>
+    <tr>
+      <td>Prolongate a job offer</td>
+      <td>Absolventa XML or HR-XML</td>
+      <td>PUT</td>
+      <td>/api/r/job_offers/{id}/prolongate.xml</td>
+      <td>Prior to the expiration date, the runtime of a <em>standard</em> job offer can be extended by another 12 months.</td>
     </tr>
   </tbody>
 </table>
