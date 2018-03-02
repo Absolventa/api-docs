@@ -4,97 +4,397 @@ Our RESTful API accepts two different XML based data formats
 to manage your job offers headlessly: `Absolventa XML` and `HR-XML`, which
 nowadays is sometimes called `HR Open Standards`.
 
-### Endpoints
-<table>
-  <thead>
-    <tr>
-      <th>Action</th>
-      <th>Format</th>
-      <th>HTTP method</th>
-      <th>ENDPOINT</th>
-      <th>Further Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>List published</td>
-      <td>Absolventa XML</td>
-      <td>GET</td>
-      <td>/api/r/job_offers.xml</td>
-      <td>List all job offers that are available to be listed in our public search interface</td>
-    </tr>
-    <tr>
-      <td>List drafts</td>
-      <td>Absolventa XML</td>
-      <td>GET</td>
-      <td>/api/r/job_offers/draft.xml</td>
-      <td>List all job offers that are drafts (⇔ unpublished) and therefore haven't been available to be listed in our publich search interface yet</td>
-    </tr>
-    <tr>
-      <td>List expired</td>
-      <td>Absolventa XML</td>
-      <td>GET</td>
-      <td>/api/r/job_offers/expired.xml</td>
-      <td>List all job offers that are not available to be listed in our public search interface any longer because their ended_at value refers to a date in the past</td>
-    </tr>
-    <tr>
-      <td>Creation of a new job offer</td>
-      <td>Absolventa XML</td>
-      <td>POST</td>
-      <td>/api/r/job_offers.xml</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Creation of a new job offer</td>
-      <td>HR-XML</td>
-      <td>POST</td>
-      <td>/api/r/hrxml/job_offers.xml</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Update of an existing job offer</td>
-      <td>Absolventa XML</td>
-      <td>PUT</td>
-      <td>/api/r/job_offers/{id}.xml</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Update of an existing job offer</td>
-      <td>HR-XML</td>
-      <td>PUT</td>
-      <td>/api/r/hrxml/job_offers/{id}.xml</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Ending a job offer</td>
-      <td>Absolventa XML or HR-XML</td>
-      <td>PUT</td>
-      <td>/api/r/job_offers/{id}/quit.xml</td>
-      <td>
-        If you want to unpublish a job offer at a specific point in time you can submit your
-        requested datetime like this attached to the request:
-        <code>
-          &ltended_at&gt2019-01-01&lt/ended_at&gt
-        </code>
-        Note that your requested date has to
-        be before the job offer's current value of ended_at.
-      </td>
-    </tr>
-    <tr>
-      <td>Prolongate a job offer</td>
-      <td>Absolventa XML or HR-XML</td>
-      <td>PUT</td>
-      <td>/api/r/job_offers/{id}/prolongate.xml</td>
-      <td>Prior to the expiration date, the runtime of a <em>standard</em> job offer can be extended by another 12 months.</td>
-    </tr>
-  </tbody>
-</table>
-
 ### Authentication
 
-After your account manager has handed out you your API key, please
+Our RESTful API uses HTTP Basic Authentication. Your account manager will hand out you an API key. Please
 provide it as username for HTTP Basic Authentication. Leave the password
-blank or fill it with a fallback letter like <code>"X"</code>
+blank or fill it with a fallback letter like <code>"X"</code>.
+
+### Endpoints
+
+* [List all published job offers](#list-published-job-offers)
+* [List all draft job offers](#list-draft-job-offers)
+* [List all expired job offers](#list-expired-job-offers)
+* [Create a job offer using Absolventa XML]()
+* [Update a job offer using Absolventa XML]()
+* [Create a job offer using HR-XML]()
+* [Update a job offer using HR-XML]()
+* [End a job offer ]()
+* [Prolongate a job offer]()
+
+
+#### List published job offers
+
+List all job offers that are available in our public search interface.
+
+<table>
+  <td>
+    <tr>Endpoint</tr>
+    <tr>HTTP method</tr>
+    <tr>Response Format</tr>
+  </td>
+  <td>
+    <tr>/api/r/job_offers.xml</tr>
+    <tr>GET</tr>
+    <tr>Absolventa XML</tr>
+  </td>
+</table>
+
+##### Example
+
+```
+curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https://www.absolventa.de/api/r/job_offers.xml
+```
+
+#### List draft job offers
+
+List all job offers that are drafts (⇔ unpublished) and therefore haven't been available to be listed in our publich search interface yet.
+
+<table>
+  <td>
+    <tr>Endpoint</tr>
+    <tr>HTTP method</tr>
+    <tr>Response Format</tr>
+  </td>
+  <td>
+    <tr>/api/r/job_offers/drafts.xml</tr>
+    <tr>GET</tr>
+    <tr>Absolventa XML</tr>
+  </td>
+</table>
+
+##### Example
+
+```
+curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https://www.absolventa.de/api/r/job_offers/drafts.xml
+```
+
+#### List expired job offers
+
+List all job offers that are not available to be listed in our public search interface any longer because their ended_at value refers to a date in the past.
+
+<table>
+  <td>
+    <tr>Endpoint</tr>
+    <tr>HTTP method</tr>
+    <tr>Response Format</tr>
+  </td>
+  <td>
+    <tr>/api/r/job_offers/expired.xml</tr>
+    <tr>GET</tr>
+    <tr>Absolventa XML</tr>
+  </td>
+</table>
+
+##### Example
+
+```
+curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https://www.absolventa.de/api/r/job_offers/expired.xml
+```
+
+#### Create a job offer using Absolventa XML
+
+<table>
+  <td>
+    <tr>Endpoint</tr>
+    <tr>HTTP method</tr>
+    <tr>Data Format</tr>
+  </td>
+  <td>
+    <tr>/api/r/job_offers.xml</tr>
+    <tr>POST</tr>
+    <tr>Absolventa XML</tr>
+  </td>
+</table>
+
+##### Example
+
+```
+curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -u 28a622e8ea6665433729932112d1d9cc:X
+     -d '<job_offer>Trainee Web Development (m/w)<title></title><description>Eine Beschreibung</description><!-- … --></job_offer>'
+     https://www.absolventa.de/api/r/job_offers.xml
+```
+
+#### Update a job offer using Absolventa XML
+
+<table>
+  <td>
+    <tr>Endpoint</tr>
+    <tr>HTTP method</tr>
+    <tr>Data Format</tr>
+  </td>
+  <td>
+    <tr>/api/r/job_offers/{id}.xml</tr>
+    <tr>PUT</tr>
+    <tr>Absolventa XML</tr>
+  </td>
+</table>
+
+##### Example
+
+```
+curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -u 28a622e8ea6665433729932112d1d9cc:X
+     -d '<job_offer>Trainee Web Development (m/w)<title></title><description>Eine neue Beschreibung</description><!-- … --></job_offer>'
+     https://www.absolventa.de/api/r/job_offers/12345.xml
+```
+
+#### Create a job offer using HR-XML
+
+<table>
+  <td>
+    <tr>Endpoint</tr>
+    <tr>HTTP method</tr>
+    <tr>Data Format</tr>
+  </td>
+  <td>
+    <tr>/api/r/hrxml/job_offers.xml</tr>
+    <tr>POST</tr>
+    <tr>HR-XML</tr>
+  </td>
+</table>
+
+##### Example
+
+```
+curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -u 28a622e8ea6665433729932112d1d9cc:X
+     -d '<PositionOpening>
+           <PositionRecordInfo>
+             <Id idOwner="Threepwod Ventures">
+               <IdValue>42</IdValue>
+             </Id>
+           </PositionRecordInfo>
+           <PositionPostings>
+             <PositionPosting>
+               <Id validFrom="2014-01-12" validTo="2015-06-12">
+                 <IdValue>42</IdValue>
+               </Id>
+               <Link><![CDATA[http://www.example.com/jobs/1]]></Link>
+             </PositionPosting>
+           </PositionPostings>
+           <PositionProfile>
+             <PositionDateInfo></PositionDateInfo>
+             <PositionDetail>
+               <Company>
+                 <Name>Threepwood Ventures</Name>
+               </Company>
+               <PhysicalLocation>
+                 <PostalAddress>
+                   <CountryCode>DE</CountryCode>
+                   <PostalCode>10405</PostalCode>
+                   <Municipality>Berlin</Municipality>
+                   <DeliveryAddress>
+                     <StreetName>Melee-Island-Street</StreetName>
+                     <BuildingNumber>42</BuildingNumber>
+                   </DeliveryAddress>
+                 </PostalAddress>
+               </PhysicalLocation>
+               <PhysicalLocation>
+                 <PostalAddress>
+                   <CountryCode>DE</CountryCode>
+                   <PostalCode>63067</PostalCode>
+                   <Municipality>Offenbach am Main</Municipality>
+                   <DeliveryAddress>
+                     <StreetName>Hölderlinstraße</StreetName>
+                     <BuildingNumber>42</BuildingNumber>
+                   </DeliveryAddress>
+                 </PostalAddress>
+               </PhysicalLocation>
+               <PositionTitle><![CDATA[Trainee Web Development (m/w)]]></PositionTitle>
+             </PositionDetail>
+             <FormattedPositionDescription>
+               <Name>Mode</Name>
+               <Value>standard</Value>
+             </FormattedPositionDescription>
+             <FormattedPositionDescription>
+               <Name>CompanyDescription</Name>
+               <Value>Company description goes here!</Value>
+             </FormattedPositionDescription>
+             <FormattedPositionDescription>
+               <Name>JobOfferPositionIds</Name>
+               <Value>1</Value>
+             </FormattedPositionDescription>
+              <Name>JobOfferDescription</Name>
+               <Value>
+                 <![CDATA[Here is a nice description]]>
+               </Value>
+             </FormattedPositionDescription>
+             <FormattedPositionDescription>
+               <Name>TraineeGefluester</Name>
+               <Value>1</Value>
+             </FormattedPositionDescription>
+             <HowToApply>
+               <ApplicationMethod>
+                 <InternetWebAddress><![CDATA[http://example.com/jobs/1/application]]></InternetWebAddress>
+               </ApplicationMethod>
+             </HowToApply>
+            </PositionProfile>
+          </PositionOpening>'
+     https://www.absolventa.de/api/r/hrxml/job_offers.xml
+```
+
+#### Update a job offer using HR-XML
+
+<table>
+  <td>
+    <tr>Endpoint</tr>
+    <tr>HTTP method</tr>
+    <tr>Data Format</tr>
+  </td>
+  <td>
+    <tr>/api/r/hrxml/job_offers/{id}.xml</tr>
+    <tr>PUT</tr>
+    <tr>HR-XML</tr>
+  </td>
+</table>
+
+##### Example
+
+```
+curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
+     -u 28a622e8ea6665433729932112d1d9cc:X
+     -d '<PositionOpening>
+           <PositionRecordInfo>
+             <Id idOwner="Threepwod Ventures">
+               <IdValue>42</IdValue>
+             </Id>
+           </PositionRecordInfo>
+           <PositionPostings>
+             <PositionPosting>
+               <Id validFrom="2014-01-12" validTo="2015-06-12">
+                 <IdValue>42</IdValue>
+               </Id>
+               <Link><![CDATA[http://www.example.com/jobs/1]]></Link>
+             </PositionPosting>
+           </PositionPostings>
+           <PositionProfile>
+             <PositionDateInfo></PositionDateInfo>
+             <PositionDetail>
+               <Company>
+                 <Name>Threepwood Ventures</Name>
+               </Company>
+               <PhysicalLocation>
+                 <PostalAddress>
+                   <CountryCode>DE</CountryCode>
+                   <PostalCode>10405</PostalCode>
+                   <Municipality>Berlin</Municipality>
+                   <DeliveryAddress>
+                     <StreetName>Melee-Island-Street</StreetName>
+                     <BuildingNumber>42</BuildingNumber>
+                   </DeliveryAddress>
+                 </PostalAddress>
+               </PhysicalLocation>
+               <PhysicalLocation>
+                 <PostalAddress>
+                   <CountryCode>DE</CountryCode>
+                   <PostalCode>63067</PostalCode>
+                   <Municipality>Offenbach am Main</Municipality>
+                   <DeliveryAddress>
+                     <StreetName>Hölderlinstraße</StreetName>
+                     <BuildingNumber>42</BuildingNumber>
+                   </DeliveryAddress>
+                 </PostalAddress>
+               </PhysicalLocation>
+               <PositionTitle><![CDATA[Trainee Web Development (m/w)]]></PositionTitle>
+             </PositionDetail>
+             <FormattedPositionDescription>
+               <Name>Mode</Name>
+               <Value>standard</Value>
+             </FormattedPositionDescription>
+             <FormattedPositionDescription>
+               <Name>CompanyDescription</Name>
+               <Value>Company description goes here!</Value>
+             </FormattedPositionDescription>
+             <FormattedPositionDescription>
+               <Name>JobOfferPositionIds</Name>
+               <Value>1</Value>
+             </FormattedPositionDescription>
+              <Name>JobOfferDescription</Name>
+               <Value>
+                 <![CDATA[Here is a nice description]]>
+               </Value>
+             </FormattedPositionDescription>
+             <FormattedPositionDescription>
+               <Name>TraineeGefluester</Name>
+               <Value>1</Value>
+             </FormattedPositionDescription>
+             <HowToApply>
+               <ApplicationMethod>
+                 <InternetWebAddress><![CDATA[http://example.com/jobs/1/application]]></InternetWebAddress>
+               </ApplicationMethod>
+             </HowToApply>
+            </PositionProfile>
+          </PositionOpening>'
+     https://www.absolventa.de/api/r/hrxml/job_offers/12345.xml
+```
+
+#### End a job offer
+
+If you want to unpublish a job offer before its natural end of runtime, you can perform a PUT request to the corresponding endpoint as shown below.
+By this endpoint you can also edit the current end date to a new value. To achieve this, wrap your requested datetime wrapped in XML like this and send it
+as data attached to your request:
+
+<code>
+  &ltended_at&gt2019-01-01&lt/ended_at&gt
+</code>
+
+Note that your requested date has to
+be before the job offer's current value of ended_at.
+
+<table>
+  <td>
+    <tr>Endpoint</tr>
+    <tr>HTTP method</tr>
+    <tr>Data Format</tr>
+  </td>
+  <td>
+    <tr>/api/r/job_offers/{id}/quit.xml</tr>
+    <tr>PUT</tr>
+    <tr>Absolventa XML or HR-XML</tr>
+  </td>
+</table>
+
+##### Examples
+
+```
+curl -X PUT -H 'Accept: application/xml'
+            -H 'Content-Type: application/xml'&#x000A;
+            -u 28a622e8ea6665433729932112d1d9cc:X
+            https://www.absolventa.de/api/r/job_offers/12345/quit.xml
+
+curl -X PUT -H 'Accept: application/xml'
+            -H 'Content-Type: application/xml'&#x000A;
+            -u 28a622e8ea6665433729932112d1d9cc:X
+            -d '<ended_at>2019-07-28T14:27:31+02:00</ended_at>'
+            https://www.absolventa.de/api/r/job_offers/12345/quit.xml
+```
+
+#### Prolongate a job offer
+
+Prior to the expiration date, the runtime of a <em>standard</em> job offer can be extended by another 12 months.
+<table>
+  <td>
+    <tr>Endpoint</tr>
+    <tr>HTTP method</tr>
+    <tr>Data Format</tr>
+  </td>
+  <td>
+    <tr>/api/r/job_offers/{id}/prolongate.xml</tr>
+    <tr>PUT</tr>
+    <tr>Absolventa XML or HR-XML</tr>
+  </td>
+</table>
+
+##### Examples
+
+```
+curl -X PUT -H 'Accept: application/xml'
+            -H 'Content-Type: application/xml'&#x000A;
+            -u 28a622e8ea6665433729932112d1d9cc:X
+            https://www.absolventa.de/api/r/job_offers/12345/prolongate.xml
+```
 
 ### Data formats
 
