@@ -28,16 +28,18 @@ blank or fill it with a fallback letter like <code>"X"</code>.
 List all job offers that are available in our public search interface.
 
 <table>
-  <td>
-    <tr>Endpoint</tr>
-    <tr>HTTP method</tr>
-    <tr>Response Format</tr>
-  </td>
-  <td>
-    <tr>/api/r/job_offers.xml</tr>
-    <tr>GET</tr>
-    <tr>Absolventa XML</tr>
-  </td>
+  <tbody>
+    <td>
+      <tr>Endpoint</tr>
+      <tr>HTTP method</tr>
+      <tr>Response Format</tr>
+    </td>
+    <td>
+      <tr>/api/r/job_offers.xml</tr>
+      <tr>GET</tr>
+      <tr>Absolventa XML</tr>
+    </td>
+  </tbody>
 </table>
 
 ##### Example
@@ -51,16 +53,18 @@ curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https
 List all job offers that are drafts (⇔ unpublished) and therefore haven't been available to be listed in our publich search interface yet.
 
 <table>
-  <td>
-    <tr>Endpoint</tr>
-    <tr>HTTP method</tr>
-    <tr>Response Format</tr>
-  </td>
-  <td>
-    <tr>/api/r/job_offers/drafts.xml</tr>
-    <tr>GET</tr>
-    <tr>Absolventa XML</tr>
-  </td>
+  <tbody>
+    <td>
+      <tr>Endpoint</tr>
+      <tr>HTTP method</tr>
+      <tr>Response Format</tr>
+    </td>
+    <td>
+      <tr>/api/r/job_offers/drafts.xml</tr>
+      <tr>GET</tr>
+      <tr>Absolventa XML</tr>
+    </td>
+  </tbody>
 </table>
 
 ##### Example
@@ -74,16 +78,18 @@ curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https
 List all job offers that are not available to be listed in our public search interface any longer because their ended_at value refers to a date in the past.
 
 <table>
-  <td>
-    <tr>Endpoint</tr>
-    <tr>HTTP method</tr>
-    <tr>Response Format</tr>
-  </td>
-  <td>
-    <tr>/api/r/job_offers/expired.xml</tr>
-    <tr>GET</tr>
-    <tr>Absolventa XML</tr>
-  </td>
+  <tbody>
+    <td>
+      <tr>Endpoint</tr>
+      <tr>HTTP method</tr>
+      <tr>Response Format</tr>
+    </td>
+    <td>
+      <tr>/api/r/job_offers/expired.xml</tr>
+      <tr>GET</tr>
+      <tr>Absolventa XML</tr>
+    </td>
+  </tbody>
 </table>
 
 ##### Example
@@ -95,16 +101,18 @@ curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https
 #### Create a job offer using Absolventa XML
 
 <table>
-  <td>
-    <tr>Endpoint</tr>
-    <tr>HTTP method</tr>
-    <tr>Data Format</tr>
-  </td>
-  <td>
-    <tr>/api/r/job_offers.xml</tr>
-    <tr>POST</tr>
-    <tr>Absolventa XML</tr>
-  </td>
+  <tbody>
+    <td>
+      <tr>Endpoint</tr>
+      <tr>HTTP method</tr>
+      <tr>Data Format</tr>
+    </td>
+    <td>
+      <tr>/api/r/job_offers.xml</tr>
+      <tr>POST</tr>
+      <tr>Absolventa XML</tr>
+    </td>
+  </tbody>
 </table>
 
 ##### Example
@@ -119,16 +127,18 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
 #### Update a job offer using Absolventa XML
 
 <table>
-  <td>
-    <tr>Endpoint</tr>
-    <tr>HTTP method</tr>
-    <tr>Data Format</tr>
-  </td>
-  <td>
-    <tr>/api/r/job_offers/{id}.xml</tr>
-    <tr>PUT</tr>
-    <tr>Absolventa XML</tr>
-  </td>
+  <tbody>
+    <td>
+      <tr>Endpoint</tr>
+      <tr>HTTP method</tr>
+      <tr>Data Format</tr>
+    </td>
+    <td>
+      <tr>/api/r/job_offers/{id}.xml</tr>
+      <tr>PUT</tr>
+      <tr>Absolventa XML</tr>
+    </td>
+  </tbody>
 </table>
 
 ##### Example
@@ -143,16 +153,18 @@ curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
 #### Create a job offer using HR-XML
 
 <table>
-  <td>
-    <tr>Endpoint</tr>
-    <tr>HTTP method</tr>
-    <tr>Data Format</tr>
-  </td>
-  <td>
-    <tr>/api/r/hrxml/job_offers.xml</tr>
-    <tr>POST</tr>
-    <tr>HR-XML</tr>
-  </td>
+  <tbody>
+    <td>
+      <tr>Endpoint</tr>
+      <tr>HTTP method</tr>
+      <tr>Data Format</tr>
+    </td>
+    <td>
+      <tr>/api/r/hrxml/job_offers.xml</tr>
+      <tr>POST</tr>
+      <tr>HR-XML</tr>
+    </td>
+  </tbody>
 </table>
 
 ##### Example
@@ -238,16 +250,18 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
 #### Update a job offer using HR-XML
 
 <table>
-  <td>
-    <tr>Endpoint</tr>
-    <tr>HTTP method</tr>
-    <tr>Data Format</tr>
-  </td>
-  <td>
-    <tr>/api/r/hrxml/job_offers/{id}.xml</tr>
-    <tr>PUT</tr>
-    <tr>HR-XML</tr>
-  </td>
+  <tbody>
+    <td>
+      <tr>Endpoint</tr>
+      <tr>HTTP method</tr>
+      <tr>Data Format</tr>
+    </td>
+    <td>
+      <tr>/api/r/hrxml/job_offers/{id}.xml</tr>
+      <tr>PUT</tr>
+      <tr>HR-XML</tr>
+    </td>
+  </tbody>
 </table>
 
 ##### Example
@@ -344,16 +358,18 @@ Note that your requested date has to
 be before the job offer's current value of ended_at.
 
 <table>
-  <td>
-    <tr>Endpoint</tr>
-    <tr>HTTP method</tr>
-    <tr>Data Format</tr>
-  </td>
-  <td>
-    <tr>/api/r/job_offers/{id}/quit.xml</tr>
-    <tr>PUT</tr>
-    <tr>Absolventa XML or HR-XML</tr>
-  </td>
+  <tbody>
+    <td>
+      <tr>Endpoint</tr>
+      <tr>HTTP method</tr>
+      <tr>Data Format</tr>
+    </td>
+    <td>
+      <tr>/api/r/job_offers/{id}/quit.xml</tr>
+      <tr>PUT</tr>
+      <tr>Absolventa XML or HR-XML</tr>
+    </td>
+  </tbody>
 </table>
 
 ##### Examples
@@ -374,17 +390,20 @@ curl -X PUT -H 'Accept: application/xml'
 #### Prolongate a job offer
 
 Prior to the expiration date, the runtime of a <em>standard</em> job offer can be extended by another 12 months.
+
 <table>
-  <td>
-    <tr>Endpoint</tr>
-    <tr>HTTP method</tr>
-    <tr>Data Format</tr>
-  </td>
-  <td>
-    <tr>/api/r/job_offers/{id}/prolongate.xml</tr>
-    <tr>PUT</tr>
-    <tr>Absolventa XML or HR-XML</tr>
-  </td>
+  <tbody>
+    <td>
+      <tr>Endpoint</tr>
+      <tr>HTTP method</tr>
+      <tr>Data Format</tr>
+    </td>
+    <td>
+      <tr>/api/r/job_offers/{id}/prolongate.xml</tr>
+      <tr>PUT</tr>
+      <tr>Absolventa XML or HR-XML</tr>
+    </td>
+  </tbody>
 </table>
 
 ##### Examples
