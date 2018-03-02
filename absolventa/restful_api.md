@@ -1,29 +1,29 @@
-## ABSOLVENTA RESTful API
+# ABSOLVENTA RESTful API
 
 Our RESTful API accepts two different XML based data formats
 to manage your job offers headlessly: `Absolventa XML` and `HR-XML`, which
 nowadays is sometimes called `HR Open Standards`.
 
-### Authentication
+## Authentication
 
 Our RESTful API uses HTTP Basic Authentication. Your account manager will hand out you an API key. Please
 provide it as username for HTTP Basic Authentication. Leave the password
 blank or fill it with a fallback letter like <code>"X"</code>.
 
-### Endpoints
+## Endpoints
 
 * [List all published job offers](#list-published-job-offers)
 * [List all draft job offers](#list-draft-job-offers)
 * [List all expired job offers](#list-expired-job-offers)
-* [Create a job offer using Absolventa XML]()
-* [Update a job offer using Absolventa XML]()
-* [Create a job offer using HR-XML]()
-* [Update a job offer using HR-XML]()
-* [End a job offer ]()
-* [Prolongate a job offer]()
+* [Create a job offer using Absolventa XML](#create-a-job-offer-using-absolventa-xml)
+* [Update a job offer using Absolventa XML](#update-a-job-offer-using-absolventa-xml)
+* [Create a job offer using HR-XML](#create-a-job-offer-using-hr-xml)
+* [Update a job offer using HR-XML](#update-a-job-offer-using-hr-xml)
+* [End a job offer ](#end-a-job-offer)
+* [Prolongate a job offer](#prolongate-a-job-offer)
 
 
-#### List published job offers
+### List published job offers
 
 List all job offers that are available in our public search interface.
 
@@ -42,13 +42,13 @@ List all job offers that are available in our public search interface.
   </tbody>
 </table>
 
-##### Example
+#### Example
 
 ```
 curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https://www.absolventa.de/api/r/job_offers.xml
 ```
 
-#### List draft job offers
+### List draft job offers
 
 List all job offers that are drafts (⇔ unpublished) and therefore haven't been available to be listed in our publich search interface yet.
 
@@ -67,13 +67,13 @@ List all job offers that are drafts (⇔ unpublished) and therefore haven't been
   </tbody>
 </table>
 
-##### Example
+#### Example
 
 ```
 curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https://www.absolventa.de/api/r/job_offers/drafts.xml
 ```
 
-#### List expired job offers
+### List expired job offers
 
 List all job offers that are not available to be listed in our public search interface any longer because their ended_at value refers to a date in the past.
 
@@ -92,13 +92,13 @@ List all job offers that are not available to be listed in our public search int
   </tbody>
 </table>
 
-##### Example
+#### Example
 
 ```
 curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https://www.absolventa.de/api/r/job_offers/expired.xml
 ```
 
-#### Create a job offer using Absolventa XML
+### Create a job offer using Absolventa XML
 
 <table>
   <tbody>
@@ -115,7 +115,7 @@ curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https
   </tbody>
 </table>
 
-##### Example
+#### Example
 
 ```
 curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
@@ -124,7 +124,7 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
      https://www.absolventa.de/api/r/job_offers.xml
 ```
 
-#### Update a job offer using Absolventa XML
+### Update a job offer using Absolventa XML
 
 <table>
   <tbody>
@@ -141,7 +141,7 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
   </tbody>
 </table>
 
-##### Example
+#### Example
 
 ```
 curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
@@ -150,7 +150,7 @@ curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
      https://www.absolventa.de/api/r/job_offers/12345.xml
 ```
 
-#### Create a job offer using HR-XML
+### Create a job offer using HR-XML
 
 <table>
   <tbody>
@@ -167,7 +167,7 @@ curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
   </tbody>
 </table>
 
-##### Example
+#### Example
 
 ```
 curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
@@ -247,7 +247,7 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
      https://www.absolventa.de/api/r/hrxml/job_offers.xml
 ```
 
-#### Update a job offer using HR-XML
+### Update a job offer using HR-XML
 
 <table>
   <tbody>
@@ -264,7 +264,7 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
   </tbody>
 </table>
 
-##### Example
+#### Example
 
 ```
 curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
@@ -344,7 +344,7 @@ curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
      https://www.absolventa.de/api/r/hrxml/job_offers/12345.xml
 ```
 
-#### End a job offer
+### End a job offer
 
 If you want to unpublish a job offer before its natural end of runtime, you can perform a PUT request to the corresponding endpoint as shown below.
 By this endpoint you can also edit the current end date to a new value. To achieve this, wrap your requested datetime wrapped in XML like this and send it
@@ -372,7 +372,7 @@ be before the job offer's current value of ended_at.
   </tbody>
 </table>
 
-##### Examples
+#### Examples
 
 ```
 curl -X PUT -H 'Accept: application/xml'
@@ -387,7 +387,7 @@ curl -X PUT -H 'Accept: application/xml'
             https://www.absolventa.de/api/r/job_offers/12345/quit.xml
 ```
 
-#### Prolongate a job offer
+### Prolongate a job offer
 
 Prior to the expiration date, the runtime of a <em>standard</em> job offer can be extended by another 12 months.
 
@@ -406,7 +406,7 @@ Prior to the expiration date, the runtime of a <em>standard</em> job offer can b
   </tbody>
 </table>
 
-##### Examples
+#### Examples
 
 ```
 curl -X PUT -H 'Accept: application/xml'
