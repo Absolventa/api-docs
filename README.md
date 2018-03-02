@@ -3,7 +3,7 @@
 This repository provides information material on how to integrate
 your application with our job boards.
 
-## ABSOLVENTA
+### ABSOLVENTA
 
 https://www.absolventa.de
 
@@ -11,20 +11,20 @@ https://www.absolventa.de
 * Processsing data streams served via HTTP of different format by our [Pull API](absolventa/pull_api.md)
 
 
-## PRAKTIKUM.INFO
+### PRAKTIKUM.INFO
 
 https://www.praktikum.info
 
 * [RESTful API](praktikum_info/restful_api.md) based on XML
 * Processsing data streams served via HTTP of different format by our [Pull API](praktikum_info/pull_api.md)
 
-## AZUBI.DE
+### AZUBI.DE
 
 https://www.azubi.de
 
 * Processsing data streams served via HTTP of different format by our [Pull API](azubi/pull_api.md)
 
-# TRAINEE-GEFLÜSTER
+### TRAINEE-GEFLÜSTER
 
 https://www.trainee-gefluester.de
 
