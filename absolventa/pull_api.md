@@ -60,7 +60,7 @@ data in this format, we can immediately configure a connection:
 
 ### Data fields
 
-<table class='table table-bordered table-striped'>
+<table>
   <thead>
     <tr>
       <th>attribute</th>
@@ -71,17 +71,13 @@ data in this format, we can immediately configure a connection:
   </thead>
   <tbody>
     <tr>
-      <td>
-        <span class='label label-danger'>external_id</span>
-      </td>
+      <td>external_id</td>
       <td>Your internal identifier of the record</td>
       <td>String</td>
       <td>required</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-info'>mode</span>
-      </td>
+      <td>mode</td>
       <td>
         Possible values: <code>standard</code> and <code>premium</code>.
         Defaults to <code>standard</code> if omitted.
@@ -91,17 +87,13 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-danger'>title</span>
-      </td>
+      <td>title</td>
       <td>Title</td>
       <td>String</td>
       <td>required</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-info'>external_url</span>
-      </td>
+      <td>external_url</td>
       <td>
         URL pointing to a HTML representation of your job offer. The HTML content of the <code>external_url</url> will be
         displayed within an <code>iframe</code> element on our website.
@@ -110,76 +102,62 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-danger'>description</span>
-      </td>
+      <td>description</td>
       <td>Description text of your job ad. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>required</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-info'>company_description</span>
-      </td>
+      <td>company_description</td>
       <td>Description text of your company. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
+      <td>started_at</td>
       <td>
-        <span class='label label-info'>started_at</span>
+        Date the job offer starts being published to our platform. Note that once the job offer has
+        been published this field cannot be edited any longer. If left out, we immediately publish your
+        job offer.
       </td>
-        <td>
-          Date the job offer starts being published to our platform. Note that once the job offer has
-          been published this field cannot be edited any longer. If left out, we immediately publish your
-          job offer.
-        </td>
       <td>Datetime</td>
       <td>optional</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-info'>ended_at</span>
-      </td>
-        <td>
-          <p>
-            Date on which the job offer stops being published to our platform.
-          </p>
-        </td>
+      <td>apprenticeship_started_at</td>
+      <td>Date on which the apprenticeship will start</td>
       <td>Datetime</td>
       <td>optional</td>
     </tr>
     <tr>
+      <td>ended_at</td>
+      <td>Date on which the job offer stops being published to our platform.</td>
+      <td>Datetime</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>trainee_gefluester</td>
       <td>
-        <span class='label label-info'>trainee_gefluester</span>
-      </td>
-      <td>
-        <p>Allows mirroring a job offer on TRAINEE-GEFLÜSTER by supplying <code>true</code> (valid TRAINEE-GEFLÜSTER contract required).</p>
-        <p>Contact your account manager to get activated for this service.</p>
+        <p>Allows co-publication a job offer on our job board TRAINEE-GEFLÜSTER by supplying <code>true</code> (valid TRAINEE-GEFLÜSTER contract required).</p>
+        <p>Contact your account manager if you are interested in this service.</p>
       </td>
       <td>String</td>
       <td>optional</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-info'>application_url</span>
-      </td>
-      <td>URL pointing to the application formular of the job offer.</td>
+      <td>application_url</td>
+      <td>URL pointing to the application online formular of the job offer.</td>
       <td>String</td>
       <td>optional (You need to provide either an <code>application_url</code> or an <code>application_email</code>)</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-info'>application_email</span>
-      </td>
+      <td>application_email</td>
       <td>E-Mail address potential candidates shall send their applications to</td>
       <td>String</td>
       <td>optional (You need to provide either an <code>application_url</code> or an <code>application_email</code>)</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label_info'>job_offer_locations</span>
-      </td>
+      <td>job_offer_locations</td>
       <td>
         List of job_offer_location objects. Each job_offer_location contained in the list
         has to include at least a <code>city</code> and a <code>zip</code> value.
@@ -188,9 +166,7 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-info'>use_responsive_template</span>
-      </td>
+      <td>use_responsive_template</td>
       <td>
         If you also submit an HTML representation of the job_offer (by submission of
         <code>external_url</code>) and if your HTML representation behaves responsive, you
@@ -202,9 +178,7 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-info'>height</span>
-      </td>
+      <td>height</td>
       <td>Height of the iframe displaying the content of <code>external_url</code> in px.</td>
       <td>Integer</td>
       <td>optional</td>
