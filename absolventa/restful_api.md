@@ -29,16 +29,16 @@ List all job offers that are available in our public search interface.
 
 <table>
   <tbody>
-    <td>
-      <tr>Endpoint</tr>
-      <tr>HTTP method</tr>
-      <tr>Response Format</tr>
-    </td>
-    <td>
-      <tr>/api/r/job_offers.xml</tr>
-      <tr>GET</tr>
-      <tr>Absolventa XML</tr>
-    </td>
+    <tr>
+      <td>Endpoint</td>
+      <td>HTTP method</td>
+      <td>Response Format</td>
+    </tr>
+    <tr>
+      <td>/api/r/job_offers.xml</td>
+      <td>GET</td>
+      <td>Absolventa XML</td>
+    </tr>
   </tbody>
 </table>
 
@@ -54,16 +54,16 @@ List all job offers that are drafts (⇔ unpublished) and therefore haven't been
 
 <table>
   <tbody>
-    <td>
-      <tr>Endpoint</tr>
-      <tr>HTTP method</tr>
-      <tr>Response Format</tr>
-    </td>
-    <td>
-      <tr>/api/r/job_offers/drafts.xml</tr>
-      <tr>GET</tr>
-      <tr>Absolventa XML</tr>
-    </td>
+    <tr>
+      <td>Endpoint</td>
+      <td>HTTP method</td>
+      <td>Response Format</td>
+    </tr>
+    <tr>
+      <td>/api/r/job_offers/drafts.xml</td>
+      <td>GET</td>
+      <td>Absolventa XML</td>
+    </tr>
   </tbody>
 </table>
 
@@ -79,16 +79,16 @@ List all job offers that are not available to be listed in our public search int
 
 <table>
   <tbody>
-    <td>
-      <tr>Endpoint</tr>
-      <tr>HTTP method</tr>
-      <tr>Response Format</tr>
-    </td>
-    <td>
-      <tr>/api/r/job_offers/expired.xml</tr>
-      <tr>GET</tr>
-      <tr>Absolventa XML</tr>
-    </td>
+    <tr>
+      <td>Endpoint</td>
+      <td>HTTP method</td>
+      <td>Response Format</td>
+    </tr>
+    <tr>
+      <td>/api/r/job_offers/expired.xml</td>
+      <td>GET</td>
+      <td>Absolventa XML</td>
+    </tr>
   </tbody>
 </table>
 
@@ -102,16 +102,16 @@ curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https
 
 <table>
   <tbody>
-    <td>
-      <tr>Endpoint</tr>
-      <tr>HTTP method</tr>
-      <tr>Data Format</tr>
-    </td>
-    <td>
-      <tr>/api/r/job_offers.xml</tr>
-      <tr>POST</tr>
-      <tr>Absolventa XML</tr>
-    </td>
+    <tr>
+      <td>Endpoint</td>
+      <td>HTTP method</td>
+      <td>Data Format</td>
+    </tr>
+    <tr>
+      <td>/api/r/job_offers.xml</td>
+      <td>POST</td>
+      <td>Absolventa XML</td>
+    </tr>
   </tbody>
 </table>
 
@@ -128,16 +128,16 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
 
 <table>
   <tbody>
-    <td>
-      <tr>Endpoint</tr>
-      <tr>HTTP method</tr>
-      <tr>Data Format</tr>
-    </td>
-    <td>
-      <tr>/api/r/job_offers/{id}.xml</tr>
-      <tr>PUT</tr>
-      <tr>Absolventa XML</tr>
-    </td>
+    <tr>
+      <td>Endpoint</td>
+      <td>HTTP method</td>
+      <td>Data Format</td>
+    </tr>
+    <tr>
+      <td>/api/r/job_offers/{id}.xml</td>
+      <td>PUT</td>
+      <td>Absolventa XML</td>
+    </tr>
   </tbody>
 </table>
 
@@ -154,16 +154,16 @@ curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
 
 <table>
   <tbody>
-    <td>
-      <tr>Endpoint</tr>
-      <tr>HTTP method</tr>
-      <tr>Data Format</tr>
-    </td>
-    <td>
-      <tr>/api/r/hrxml/job_offers.xml</tr>
-      <tr>POST</tr>
-      <tr>HR-XML</tr>
-    </td>
+    <tr>
+      <td>Endpoint</td>
+      <td>HTTP method</td>
+      <td>Data Format</td>
+    </tr>
+    <tr>
+      <td>/api/r/hrxml/job_offers.xml</td>
+      <td>POST</td>
+      <td>HR-XML</td>
+    </tr>
   </tbody>
 </table>
 
@@ -251,16 +251,16 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
 
 <table>
   <tbody>
-    <td>
-      <tr>Endpoint</tr>
-      <tr>HTTP method</tr>
-      <tr>Data Format</tr>
-    </td>
-    <td>
-      <tr>/api/r/hrxml/job_offers/{id}.xml</tr>
-      <tr>PUT</tr>
-      <tr>HR-XML</tr>
-    </td>
+    <tr>
+      <td>Endpoint</td>
+      <td>HTTP method</td>
+      <td>Data Format</td>
+    </tr>
+    <tr>
+      <td>/api/r/hrxml/job_offers/{id}.xml</td>
+      <td>PUT</td>
+      <td>HR-XML</td>
+    </tr>
   </tbody>
 </table>
 
@@ -359,16 +359,16 @@ be before the job offer's current value of ended_at.
 
 <table>
   <tbody>
-    <td>
-      <tr>Endpoint</tr>
-      <tr>HTTP method</tr>
-      <tr>Data Format</tr>
-    </td>
-    <td>
-      <tr>/api/r/job_offers/{id}/quit.xml</tr>
-      <tr>PUT</tr>
-      <tr>Absolventa XML or HR-XML</tr>
-    </td>
+    <tr>
+      <td>Endpoint</td>
+      <td>HTTP method</td>
+      <td>Data Format</td>
+    </tr>
+    <tr>
+      <td>/api/r/job_offers/{id}/quit.xml</td>
+      <td>PUT</td>
+      <td>Absolventa XML or HR-XML</td>
+    </tr>
   </tbody>
 </table>
 
@@ -393,16 +393,16 @@ Prior to the expiration date, the runtime of a <em>standard</em> job offer can b
 
 <table>
   <tbody>
-    <td>
-      <tr>Endpoint</tr>
-      <tr>HTTP method</tr>
-      <tr>Data Format</tr>
-    </td>
-    <td>
-      <tr>/api/r/job_offers/{id}/prolongate.xml</tr>
-      <tr>PUT</tr>
-      <tr>Absolventa XML or HR-XML</tr>
-    </td>
+  <tr>
+    <td>Endpoint</td>
+    <td>HTTP method</td>
+    <td>Data Format</td>
+  </tr>
+  <tr>
+    <td>/api/r/job_offers/{id}/prolongate.xml</td>
+    <td>PUT</td>
+    <td>Absolventa XML or HR-XML</td>
+  </tr>
   </tbody>
 </table>
 
