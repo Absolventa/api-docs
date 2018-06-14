@@ -9,6 +9,7 @@
   <started_at type="datetime">2017-01-03T00:00:00+02:00</started_at>
   <ended_at type="datetime">2017-12-10T12:14:42+01:00</ended_at>
   <!-- You need to either provide an URL or an email address for application. -->
+  <application_method>email/url</application_method>
   <application_url>https://example.com/jobs/1/apply</application_url>
   <application_email>application@absolventa.de</application_email>
   <job_offer_locations>
@@ -122,16 +123,22 @@
       <td>optional</td>
     </tr>
     <tr>
+      <td>application_method</td>
+      <td>Info about the application method.</td>
+      <td>String</td>
+      <td>required (Either <code>email</code> or <code>url</code>)</td>
+    </tr>
+    <tr>
       <td>application_url</td>
       <td>URL pointing to the application online formular of the job offer.</td>
       <td>String</td>
-      <td>optional (You need to provide either an <code>application_url</code> or an <code>application_email</code>)</td>
+      <td>required (If application_method is set to <code>url</code>)</td>
     </tr>
     <tr>
       <td>application_email</td>
       <td>E-Mail address potential candidates shall send their applications to</td>
       <td>String</td>
-      <td>optional (You need to provide either an <code>application_url</code> or an <code>application_email</code>)</td>
+      <td>required (If application_method is set to <code>email</code>)</td>
     </tr>
     <tr>
       <td>job_offer_locations</td>
