@@ -190,11 +190,10 @@ data in this format, we can immediately configure a connection:
       </td>
       <td>Integer</td>
       <td>optional</td>
-    </tr>
     <tr>
-      <td>mininal_degree</td>
+      <td>minimal_degree</td>
       <td>
-        Mininal graduation degree the candidates should own.
+        Minimal graduation degree the candidates should own.
         Possible values:
         <ul>
           <li><code>basic</code> (Hauptschulabschluss)</li>
