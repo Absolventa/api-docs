@@ -123,10 +123,27 @@ curl -i -H 'Accept: application/xml' -u 28a622e8ea6665433729932112d1d9cc:X https
 #### Example
 
 ```
-curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
-     -u 28a622e8ea6665433729932112d1d9cc:X
-     -d '<job_offer>Trainee Web Development (m/w)<title></title><description>Eine Beschreibung</description><!-- … --></job_offer>'
-     https://www.absolventa.de/api/r/job_offers.xml
+curl -i -X POST https://www.absolventa.de/api/r/job_offers.xml \
+     -H 'Accept: application/xml' \
+     -H 'Content-Type: application/xml' \
+     -u 123:X \
+     -d @- << EOF
+           <job_offer>
+             <title>Trainee Web Development (m/w/d)</title>
+             <description>
+               <![CDATA[Lorem Ipsum]]>
+             </description>
+             <application_url>https://www.example.com/jobs/123/apply</application_url>
+             <job_offer_locations type='array'>
+               <job_offer_location>
+                 <street>Friedrichstrasse 67</street>
+                 <zip>10117</zip>
+                 <city>Berlin</city>
+                 <country>Deutschland</country>
+               </job_offer_location>
+            </job_offer_locations>
+           </job_offer>
+           EOF
 ```
 
 ### Update a job offer using Absolventa XML
@@ -149,10 +166,27 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
 #### Example
 
 ```
-curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
-     -u 28a622e8ea6665433729932112d1d9cc:X
-     -d '<job_offer>Trainee Web Development (m/w)<title></title><description>Eine neue Beschreibung</description><!-- … --></job_offer>'
-     https://www.absolventa.de/api/r/job_offers/12345.xml
+curl -i -X PUT https://www.absolventa.de/api/r/job_offers/12345.xml \
+     -H 'Accept: application/xml' \
+     -H 'Content-Type: application/xml' \
+     -u 123:X \
+     -d @- << EOF
+           <job_offer>
+             <title>Trainee Web Development (m/w/d)</title>
+             <description>
+               <![CDATA[Lorem Ipsum]]>
+             </description>
+             <application_url>https://www.example.com/jobs/123/apply</application_url>
+             <job_offer_locations type='array'>
+               <job_offer_location>
+                 <street>Friedrichstrasse 67</street>
+                 <zip>10117</zip>
+                 <city>Berlin</city>
+                 <country>Deutschland</country>
+               </job_offer_location>
+            </job_offer_locations>
+           </job_offer>
+           EOF
 ```
 
 ### Create a job offer using HR-XML
@@ -175,9 +209,12 @@ curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
 #### Example
 
 ```
-curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
-     -u 28a622e8ea6665433729932112d1d9cc:X
-     -d '<PositionOpening>
+curl -i -X POST https://www.absolventa.de/api/r/hrxml/job_offers.xml \
+     -H 'Accept: application/xml' \
+     -H 'Content-Type: application/xml' \
+     -u 123:X \
+     -d @- << EOF
+        <PositionOpening>
            <PositionRecordInfo>
              <Id idOwner="Threepwod Ventures">
                <IdValue>42</IdValue>
@@ -248,8 +285,8 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
                </ApplicationMethod>
              </HowToApply>
             </PositionProfile>
-          </PositionOpening>'
-     https://www.absolventa.de/api/r/hrxml/job_offers.xml
+          </PositionOpening>
+          EOF
 ```
 
 ### Update a job offer using HR-XML
@@ -272,9 +309,12 @@ curl -i -X POST -H 'Accept: application/xml' -H 'Content-Type: application/xml'
 #### Example
 
 ```
-curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
-     -u 28a622e8ea6665433729932112d1d9cc:X
-     -d '<PositionOpening>
+curl -i -X PUT https://www.absolventa.de/api/r/hrxml/job_offers/12345.xml \
+     -H 'Accept: application/xml' \
+     -H 'Content-Type: application/xml' \
+     -u 123:X \
+     -d @- << EOF
+         <PositionOpening>
            <PositionRecordInfo>
              <Id idOwner="Threepwod Ventures">
                <IdValue>42</IdValue>
@@ -345,8 +385,8 @@ curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
                </ApplicationMethod>
              </HowToApply>
             </PositionProfile>
-          </PositionOpening>'
-     https://www.absolventa.de/api/r/hrxml/job_offers/12345.xml
+          </PositionOpening>
+          EOF
 ```
 
 ### End a job offer
@@ -380,15 +420,15 @@ be before the job offer's current value of ended_at.
 #### Examples
 
 ```
-curl -X PUT -H 'Accept: application/xml'
-            -H 'Content-Type: application/xml'&#x000A;
-            -u 28a622e8ea6665433729932112d1d9cc:X
+curl -X PUT -H 'Accept: application/xml' \
+            -H 'Content-Type: application/xml'&#x000A; \
+            -u 28a622e8ea6665433729932112d1d9cc:X \
             https://www.absolventa.de/api/r/job_offers/12345/quit.xml
 
-curl -X PUT -H 'Accept: application/xml'
-            -H 'Content-Type: application/xml'&#x000A;
-            -u 28a622e8ea6665433729932112d1d9cc:X
-            -d '<ended_at>2019-07-28T14:27:31+02:00</ended_at>'
+curl -X PUT -H 'Accept: application/xml' \
+            -H 'Content-Type: application/xml'&#x000A; \
+            -u 28a622e8ea6665433729932112d1d9cc:X \
+            -d '<ended_at>2019-07-28T14:27:31+02:00</ended_at>' \
             https://www.absolventa.de/api/r/job_offers/12345/quit.xml
 ```
 
@@ -414,8 +454,8 @@ Prior to the expiration date, the runtime of a <em>standard</em> job offer can b
 #### Examples
 
 ```
-curl -X PUT -H 'Accept: application/xml'
-            -H 'Content-Type: application/xml'&#x000A;
-            -u 28a622e8ea6665433729932112d1d9cc:X
+curl -X PUT -H 'Accept: application/xml' \
+            -H 'Content-Type: application/xml'&#x000A; \
+            -u 28a622e8ea6665433729932112d1d9cc:X \
             https://www.absolventa.de/api/r/job_offers/12345/prolongate.xml
 ```
