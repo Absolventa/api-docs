@@ -127,15 +127,6 @@
       <td>required</td>
     </tr>
     <tr>
-      <td>external_url</td>
-      <td>
-        URL pointing to a HTML representation of your job offer. The HTML content of the <code>external_url</url> will be
-        displayed within an <code>iframe</code> element on our website.
-      </td>
-      <td>String</td>
-      <td>optional</td>
-    </tr>
-    <tr>
       <td>description_headline</td>
       <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
       <td>Text</td>
@@ -208,6 +199,24 @@
       <td>optional</td>
     </tr>
     <tr>
+      <td>video_url</td>
+      <td>URL to embeddable video content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>header_image_url</td>
+      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>color</td>
+      <td>Hex code for headline color. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
       <td>started_at</td>
       <td>
         Date the job offer starts being published to our platform. Note that once the job offer has
@@ -273,24 +282,6 @@
         has to include at least a <code>city</code> and a <code>zip</code> value.
       </td>
       <td>job_offer_location object</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>use_responsive_template</td>
-      <td>
-        If you also submit an HTML representation of the job_offer (by submission of
-        <code>external_url</code>) and if your HTML representation behaves responsive, you
-        can set this attribute to <code>true</code>. In this case the iframe serving
-        your HTML content will be displayed for mobile devices, too. If left out or
-        set to false, we will always render a text representation of the job offer.
-      </td>
-      <td>Boolean</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>height</td>
-      <td>Height of the iframe displaying the content of <code>external_url</code> in px.</td>
-      <td>Integer</td>
       <td>optional</td>
     </tr>
   </tbody>
