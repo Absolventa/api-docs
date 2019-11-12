@@ -6,7 +6,6 @@
   <title>Praktikum Seefahrt (w/m/d)</title>
   <mode>premium</mode>
 
-  <external_url><![CDATA[https://www.example.com/jobs/seefahrt]]></external_url>
   <application_email>elaine.marley@absolventa.de</application_email>
   <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
   <started_at>2019-11-11T13:14:40+01:00</started_at>
@@ -78,11 +77,14 @@
     ]]>
   </contact>
 
-  <use_responsive_template>true</use_responsive_template>
-  <height>1234</height>
   <color>#efefef</color>
 
-  <!-- The submission of these fields is deprecated -->
+  <!-- These XML fields are deprecated -->
+  <external_url><![CDATA[https://www.example.com/jobs/seefahrt]]></external_url>
+  <use_responsive_template>true</use_responsive_template>
+  <height>1234</height>
+
+  <!-- The submission of these fields is deprecated - please use <contact> instead! -->
   <contact_name>Elaine Marley</contact_name>
   <contact_email>elaine.marley@absolventa.de</contact_email>
   <contact_phone>+49 0123456</contact_phone>
@@ -111,7 +113,7 @@
     <tr>
       <td>mode</td>
       <td>
-        Possible values: <code>standard</code> and <code>premium</code>.
+        Possible values: <code>standard</code>. <code>premium</code> and <code>premium_plus</code>.
         Defaults to <code>standard</code> if omitted.
         Cannot be changed after creation.
       </td>
@@ -134,14 +136,74 @@
       <td>optional</td>
     </tr>
     <tr>
+      <td>description_headline</td>
+      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
       <td>description</td>
       <td>Description text of your job ad. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>required</td>
     </tr>
     <tr>
+      <td>company_description_headline</td>
+      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
       <td>company_description</td>
       <td>Description text of your company. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>qualifications_headline</td>
+      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>qualifications</td>
+      <td>Text summarizing the requirements of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>tasks_headline</td>
+      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>tasks</td>
+      <td>Text summarizing the job tasks of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>benefits_headline</td>
+      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>benefits</td>
+      <td>Text summarizing the job benefits of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>contact_headline</td>
+      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>contact</td>
+      <td>Text summarizing the contact information for the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -157,7 +219,7 @@
     </tr>
     <tr>
       <td>apprenticeship_started_at</td>
-      <td>Date on which the apprenticeship will start</td>
+      <td>Date on which the apprenticeship will start. Only relevant for job ads targeted at https://www.azubi.de.</td>
       <td>Datetime</td>
       <td>optional</td>
     </tr>
@@ -176,6 +238,16 @@
       <td>String</td>
       <td>optional</td>
     </tr>
+    <tr>
+      <td>praktikum_info</td>
+      <td>
+        <p>Allows co-publication a job offer on our job board PRAKTIKUM.INFO by supplying <code>true</code> (valid PRAKTIKUM.INFO contract required).</p>
+        <p>Contact your account manager if you are interested in this service.</p>
+      </td>
+      <td>String</td>
+      <td>optional</td>
+    </tr>
+
     <tr>
       <td>application_method</td>
       <td>Info about the application method.</td>
