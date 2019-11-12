@@ -1,38 +1,92 @@
 # Absolventa XML
 
 ```XML
+<?xml version="1.0" encoding="UTF-8"?>
 <job_offer>
+  <title>Praktikum Seefahrt (w/m/d)</title>
   <mode>premium</mode>
-  <title>Trainee Web Development (m/w)</title>
-  <external_url>https://example.com/jobs/1</external_url>
-  <description><![CDATA[<p>Basic HTML tags are allowed here</p>]]></description>
-  <started_at type="datetime">2017-01-03T00:00:00+02:00</started_at>
-  <ended_at type="datetime">2017-12-10T12:14:42+01:00</ended_at>
-  <!-- You need to either provide an URL or an email address for application. -->
-  <application_method>email/url</application_method>
-  <application_url>https://example.com/jobs/1/apply</application_url>
-  <application_email>application@absolventa.de</application_email>
-  <job_offer_locations>
-    <job_offer_location>
-      <street>Friedrichstraße 67</street>
-      <zip>10117</zip>
-      <city>Berlin</city>
-      <country>Deutschland</country>
-    </job_offer_location>
-    <job_offer_location>
-      <street>Greifswalder Straße 212</street>
-      <zip>10405</zip>
-      <city>Berlin</city>
-      <country>Deutschland</country>
-    </job_offer_location>
-  </job_offer_locations>
-  <contact_name>Rosi Beckers</contact_name>
-  <contact_email>rosi.beckers@absolventa.de</contact_email>
-  <contact_phone>030240483121</contact_name>
-  <contact_position>Leitung Personalwesen</contact_position>
-  <trainee_gefluester>true</trainee_gefluester>
+
+  <external_url><![CDATA[https://www.example.com/jobs/seefahrt]]></external_url>
+  <application_email>elaine.marley@absolventa.de</application_email>
+  <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
+  <started_at>2019-11-11T13:14:40+01:00</started_at>
+  <ended_at>2019-11-15T23:59:59+01:00</ended_at>
+
+  <city>Berlin</city>
+  <street>Friedrichstraße 67</street>
+  <zip>10318</zip>
+  <country>Deutschland</country>
+
+  <description_headline>Komm' an Bord!</description_headline>
+  <description>
+    <![CDATA[
+      <p>
+        Unser renormiertes Seefahrtsunternehmen heuert verlässlich und regelmäßig die besten
+        Seefrauen und -männer (w/m/d) östlich des Atlantiks an. Generationen von Seefahrtsexperten
+        haben ihre Karriere mit ersten nautischen Schritten in unserem Unternehmen gestartet.
+      </p>
+    ]]>
+  </description>
+
+  <qualifications_headline>Du bist mutig genug, in allen Ozeanen dieser Welt zu schwimmen?</qualifications_headline>
+  <qualifications>
+    <![CDATA[
+      <ul>
+        <li>Du kannst schwimmen (Seepferdchen notwendig)</li>
+        <li>Ein leichtes Schaukeln ist für dich kein Problem</li>
+      </ul>
+    ]]>
+  </qualifications>
+
+  <tasks_headline>Du kannst im Schlaf unter tosendem Sturm problemlos Segel setzen?</tasks_headline>
+  <tasks>
+    <![CDATA[
+      <ul>
+        <li>Du peppst die rauhen und kantigen Geschichten unserer weltweit verstreuten Mitarbeiter gekonnt linguistisch auf</li>
+        <li>Dein Instikt lässt dich problemlos Fakten von Seemannsgarn unterscheiden</li>
+      </ul>
+    ]]>
+  </tasks>
+
+  <benefits_headline>Bestens ausgerüstet!</benefits_headline>
+  <benefits>
+    <![CDATA[
+      <ul>
+        <li>Reise zum Ende der Welt</li>
+        <li>Ein loyales Team</li>
+        <li>Remote first: Wir begrüßen ausdrücklich das eigenständige, asynchrone Arbeiten in entlegenen Gegenden</li>
+      </ul>
+    ]]>
+  </benefits>
+
+  <company_description_headline>Unser Geschäft ist kein Voodoo!</company_description_headline>
+  <company_description>
+    <![CDATA[
+      <p>Marley & Threepwood Ventures - Ihr Partner in Sachen Seefahrt- und Handelsbeziehungen</p>
+    ]]>
+  </company_description>
+
+  <video_url><![CDATA[https://api.example.com/videos/seemannsgarn]]></video_url>
+  <header_image_url><![CDATA[https://api.example.com/content/header_image.jpg]]></header_image_url>
+
+  <contact_headline>Frag' unsere Expertin Elaine!</contact_headline>
+  <contact>
+    <![CDATA[
+      <p>Elaine Marley</p>
+      <p>elaine.marley@absolventa.de</p>
+      <small>Senior Seefahrt-Personalmanagerin</small>
+    ]]>
+  </contact>
+
   <use_responsive_template>true</use_responsive_template>
-  <height>1200</height>
+  <height>1234</height>
+  <color>#efefef</color>
+
+  <!-- The submission of these fields is deprecated -->
+  <contact_name>Elaine Marley</contact_name>
+  <contact_email>elaine.marley@absolventa.de</contact_email>
+  <contact_phone>+49 0123456</contact_phone>
+  <contact_position>Recruiter</contact_position>
 </job_offer>
 ```
 
