@@ -16,6 +16,21 @@
   <zip>10318</zip>
   <country>Deutschland</country>
 
+  <job_offer_locations>
+    <job_offer_location>
+      <city>Berlin</city>
+      <street>Greifswalder Straße 212</street>
+      <zip>10405</zip>
+      <country>Deutschland</country>
+    </job_offer_location>
+    <job_offer_location>
+      <city>Berlin</city>
+      <street>Oranienburger Straße 33</street>
+      <zip>10178</zip>
+      <country>Deutschland</country>
+    </job_offer_location>
+  </job_offer_locations>
+
   <description_headline>Komm' an Bord!</description_headline>
   <description>
     <![CDATA[

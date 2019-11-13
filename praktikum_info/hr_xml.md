@@ -27,11 +27,22 @@
       <PhysicalLocation>
         <PostalAddress>
           <CountryCode>Deutschland</CountryCode>
-          <PostalCode>10318</PostalCode>
+          <PostalCode>10117</PostalCode>
           <Municipality>Berlin</Municipality>
           <DeliveryAddress>
-            <StreetName>Friedrichstraße </StreetName>
+            <StreetName>Friedrichstraße</StreetName>
             <BuildingNumber>67</BuildingNumber>
+          </DeliveryAddress>
+        </PostalAddress>
+      </PhysicalLocation>
+      <PhysicalLocation>
+        <PostalAddress>
+          <CountryCode>Deutschland</CountryCode>
+          <PostalCode>10405</PostalCode>
+          <Municipality>Berlin</Municipality>
+          <DeliveryAddress>
+            <StreetName>Greifswalder Straße</StreetName>
+            <BuildingNumber>212</BuildingNumber>
           </DeliveryAddress>
         </PostalAddress>
       </PhysicalLocation>
