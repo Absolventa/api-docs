@@ -41,8 +41,8 @@
   <tasks>
     <![CDATA[
       <ul>
-        <li>Du peppst die rauhen und kantigen Geschichten unserer weltweit verstreuten Mitarbeiter gekonnt linguistisch auf</li>
-        <li>Dein Instikt lässt dich problemlos Fakten von Seemannsgarn unterscheiden</li>
+        <li>Du peppst die rauhen und kantigen Geschichten unserer weltweit verstreuten Mitarbeiter linguistisch gekonnt auf</li>
+        <li>Dein Instikt lässt dich spielerisch prüfbare Fakten von hanebüchenem Seemannsgarn unterscheiden</li>
       </ul>
     ]]>
   </tasks>
@@ -84,7 +84,6 @@
   <use_responsive_template>true</use_responsive_template>
   <height>1234</height>
 
-  <!-- The submission of these fields is deprecated - please use <contact> instead! -->
   <contact_name>Elaine Marley</contact_name>
   <contact_email>elaine.marley@absolventa.de</contact_email>
   <contact_phone>+49 0123456</contact_phone>
@@ -256,7 +255,6 @@
       <td>String</td>
       <td>optional</td>
     </tr>
-
     <tr>
       <td>application_method</td>
       <td>Info about the application method.</td>
