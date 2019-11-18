@@ -53,6 +53,16 @@ data in this format, we can immediately configure a connection:
       ]]>
     </description>
 
+    <tasks_headline>Du kannst im Schlaf unter tosendem Sturm problemlos Segel setzen?</tasks_headline>
+    <tasks>
+      <![CDATA[
+        <ul>
+          <li>Du peppst die rauhen und kantigen Geschichten unserer weltweit verstreuten Mitarbeiter linguistisch gekonnt             auf</li>
+          <li>Dein Instikt lässt dich spielerisch prüfbare Fakten von hanebüchenem Seemannsgarn unterscheiden</li>
+        </ul>
+      ]]>
+    </tasks>
+    
     <qualifications_headline>Du bist mutig genug, in allen Ozeanen dieser Welt zu schwimmen?</qualifications_headline>
     <qualifications>
       <![CDATA[
@@ -62,17 +72,7 @@ data in this format, we can immediately configure a connection:
         </ul>
       ]]>
     </qualifications>
-
-    <tasks_headline>Du kannst im Schlaf unter tosendem Sturm problemlos Segel setzen?</tasks_headline>
-    <tasks>
-      <![CDATA[
-        <ul>
-          <li>Du peppst die rauhen und kantigen Geschichten unserer weltweit verstreuten Mitarbeiter linguistisch gekonnt auf</li>
-          <li>Dein Instikt lässt dich spielerisch prüfbare Fakten von hanebüchenem Seemannsgarn unterscheiden</li>
-        </ul>
-      ]]>
-    </tasks>
-
+    
     <benefits_headline>Bestens ausgerüstet!</benefits_headline>
     <benefits>
       <![CDATA[
@@ -84,6 +84,15 @@ data in this format, we can immediately configure a connection:
       ]]>
     </benefits>
 
+    <contact_headline>Frag' unsere Expertin Elaine!</contact_headline>
+    <contact>
+      <![CDATA[
+        <p>Elaine Marley</p>
+        <p>elaine.marley@absolventa.de</p>
+        <small>Senior Seefahrt-Personalmanagerin</small>
+      ]]>
+    </contact>
+   
     <company_description_headline>Unser Geschäft ist kein Voodoo!</company_description_headline>
     <company_description>
       <![CDATA[
@@ -93,16 +102,6 @@ data in this format, we can immediately configure a connection:
 
     <video_url><![CDATA[https://api.example.com/videos/seemannsgarn]]></video_url>
     <header_image_url><![CDATA[https://api.example.com/content/header_image.jpg]]></header_image_url>
-
-    <contact_headline>Frag' unsere Expertin Elaine!</contact_headline>
-    <contact>
-      <![CDATA[
-        <p>Elaine Marley</p>
-        <p>elaine.marley@absolventa.de</p>
-        <small>Senior Seefahrt-Personalmanagerin</small>
-      ]]>
-    </contact>
-
     <color>#efefef</color>
     <custom_company_title>Threepwood GmbH</custom_company_title>
   </job_offer>
@@ -259,22 +258,16 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
-      <td>application_method</td>
-      <td>Info about the application method.</td>
-      <td>String</td>
-      <td>required (Either <code>email</code> or <code>url</code>)</td>
-    </tr>
-    <tr>
       <td>application_url</td>
       <td>URL pointing to the application online formular of the job offer.</td>
       <td>String</td>
-      <td>required (If application_method is set to <code>url</code>)</td>
+      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
     </tr>
     <tr>
       <td>application_email</td>
       <td>E-Mail address potential candidates shall send their applications to</td>
       <td>String</td>
-      <td>required (If application_method is set to <code>email</code>)</td>
+      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
     </tr>
     <tr>
       <td>job_offer_locations</td>
