@@ -15,6 +15,7 @@ data in this format, we can immediately configure a connection:
 
 <job_offers type='array'>
   <job_offer>
+    <external_id>ABC-12345</external_id>
     <title>Praktikum Seefahrt (w/m/d)</title>
     <mode>premium</mode>
 
@@ -22,6 +23,9 @@ data in this format, we can immediately configure a connection:
     <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
     <started_at>2019-11-11T13:14:40+01:00</started_at>
     <ended_at>2019-11-15T23:59:59+01:00</ended_at>
+
+    <minimal_degree>certificate</minimal_degree>
+    <duration>36</duration>
 
     <city>Berlin</city>
     <street>Friedrichstraße 67</street>

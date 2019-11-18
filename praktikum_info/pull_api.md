@@ -13,6 +13,7 @@ data in this format, we can immediately configure a connection:
 <?xml version='1.0' encoding='utf-8' ?>
 <job_offers type='array'>
   <job_offer>
+    <external_id>ABC-12345</external_id>
     <title>Praktikum Seefahrt (w/m/d)</title>
     <mode>premium</mode>
 
