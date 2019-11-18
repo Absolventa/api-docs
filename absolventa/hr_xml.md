@@ -1,73 +1,176 @@
 # HR-XML
 
 ```XML
-<PositionOpening>
- <PositionPostings>
-   <PositionPosting>
-     <Id validFrom="2017-01-03" validTo="2017-12-10">
-       <!-- Note that the ID is auto-assigned when using the RESTful API -->
-       <IdValue>12345</IdValue>
-     </Id>
-     <Link><![CDATA[https://example.com/jobs/1]]></Link>
-   </PositionPosting>
- </PositionPostings>
- <PositionProfile>
-   <PositionDetail>
-     <PhysicalLocation>
-       <PostalAddress>
-         <CountryCode>DE</CountryCode>
-         <PostalCode>10405</PostalCode>
-         <Municipality>Berlin</Municipality>
-         <DeliveryAddress>
-           <StreetName>Greifswader Straße</StreetName>
-           <BuildingNumber>212</BuildingNumber>
-         </DeliveryAddress>
-       </PostalAddress>
-     </PhysicalLocation>
-     <PhysicalLocation>
-       <PostalAddress>
-         <CountryCode>DE</CountryCode>
-         <PostalCode>10117</PostalCode>
-         <Municipality>Berlin</Municipality>
-         <DeliveryAddress>
-           <StreetName>Friedrichsstraße</StreetName>
-           <BuildingNumber>67</BuildingNumber>
-         </DeliveryAddress>
-       </PostalAddress>
-     </PhysicalLocation>
-     <PositionTitle><![CDATA[Trainee Web Development (m/w)]]></PositionTitle>
-   </PositionDetail>
-   <FormattedPositionDescription>
-     <Name>Mode</Name>
-     <Value>standard</Value>
-   </FormattedPositionDescription>
-   <FormattedPositionDescription>
-     <Name>CompanyDescription</Name>
-     <Value><![CDATA[<p>Basic HTML tags are allowed here</p>]]></Value>
-   </FormattedPositionDescription>
-   <FormattedPositionDescription>
-     <Name>JobOfferDescription</Name>
-     <Value>
-       <![CDATA[<p>Basic HTML tags are allowed here</p>]]>
-     </Value>
-   </FormattedPositionDescription>
-   <FormattedPositionDescription>
-     <Name>TraineeGefluester</Name>
-     <Value>1</Value>
-   </FormattedPositionDescription>
-   <FormattedPositionDescription>
-     <Name>UseResponsiveTemplate</Name>
-     <Value>true</Value>
-   </FormattedPositionDescription>
-   <FormattedPositionDescription>
-     <Name>Height</Name>
-     <Value>1234</Value>
-   </FormattedPositionDescription>
-   <HowToApply>
-     <ApplicationMethod>
-       <InternetWebAddress><![CDATA[https://example.com/jobs/1/apply]]></InternetWebAddress>
-     </ApplicationMethod>
-   </HowToApply>
+<?xml version='1.0' encoding='utf-8' ?>
+<PositionOpening xmlns:datetime='http://exslt.org/dates-and-times' xmlns:ns1='http://ns.hr-xml.org' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns='http://ns.hr-xml.org' xsi:schemaLocation='http://ns.hr-xml.org/2_4/HR-XML-2_4/StandAlone/PositionOpening.xsd'>
+  <PositionRecordInfo>
+    <Id idOwner='Scho GbR'>
+      <IdValue>2448257</IdValue>
+    </Id>
+  </PositionRecordInfo>
+  <PositionPostings>
+    <PositionPosting>
+      <Id validFrom='2019-11-11' validTo='2019-11-15'>
+        <IdValue>2448257</IdValue>
+      </Id>
+      <Link><![CDATA[]]></Link>
+    </PositionPosting>
+  </PositionPostings>
+  <UserArea>
+  </UserArea>
+  <PositionProfile xml:lang='DE'>
+    <PositionDateInfo></PositionDateInfo>
+    <PositionDetail>
+      <Company>
+        <Name>Scho GbR</Name>
+      </Company>
+      <PhysicalLocation>
+        <PostalAddress>
+          <CountryCode>Deutschland</CountryCode>
+          <PostalCode>10117</PostalCode>
+          <Municipality>Berlin</Municipality>
+          <DeliveryAddress>
+            <StreetName>Friedrichstraße</StreetName>
+            <BuildingNumber>67</BuildingNumber>
+          </DeliveryAddress>
+        </PostalAddress>
+      </PhysicalLocation>
+      <PhysicalLocation>
+        <PostalAddress>
+          <CountryCode>Deutschland</CountryCode>
+          <PostalCode>10405</PostalCode>
+          <Municipality>Berlin</Municipality>
+          <DeliveryAddress>
+            <StreetName>Greifswalder Straße</StreetName>
+            <BuildingNumber>212</BuildingNumber>
+          </DeliveryAddress>
+        </PostalAddress>
+      </PhysicalLocation>
+      <PositionTitle><![CDATA[Praktikum Seefahrt (w/m/d)]]></PositionTitle>
+    </PositionDetail>
+    <FormattedPositionDescription>
+      <Name>Mode</Name>
+      <Value>premium</Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>JobOfferDescription</Name>
+      <Value><![CDATA[<p>
+            Unser renormiertes Seefahrtsunternehmen heuert verlässlich und regelmäßig die besten
+            Seefrauen und -männer (w/m/d) östlich des Atlantiks an. Generationen von Seefahrtsexperten
+            haben ihre Karriere mit ersten nautischen Schritten in unserem Unternehmen gestartet.
+      </p>]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>JobOfferQualifications</Name>
+      <Value><![CDATA[<ul>
+          <li>Du kannst schwimmen (Seepferdchen notwendig)</li>
+          <li>Ein leichtes Schaukeln ist für dich kein Problem</li>
+      </ul>]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>CompanyDescriptionHeadline</Name>
+      <Value><![CDATA[Unser Geschäft ist kein Voodoo!]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>CompanyDescription</Name>
+      <Value><![CDATA[<p>Marley & Threepwood Ventures - Ihr Partner in Sachen Seefahrt- und Handelsbeziehungen</p>]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>DescriptionHeadline</Name>
+      <Value><![CDATA[Komm' an Bord!]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>Description</Name>
+      <Value><![CDATA[<p>
+            Unser renormiertes Seefahrtsunternehmen heuert verlässlich und regelmäßig die besten
+            Seefrauen und -männer (w/m/d) östlich des Atlantiks an. Generationen von Seefahrtsexperten
+            haben ihre Karriere mit ersten nautischen Schritten in unserem Unternehmen gestartet.
+      </p>]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>Qualifications</Name>
+      <Value><![CDATA[Du bist mutig genug, in allen Ozeanen dieser Welt zu schwimmen?]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>Qualifications</Name>
+      <Value><![CDATA[<ul>
+          <li>Du kannst schwimmen (Seepferdchen notwendig)</li>
+          <li>Ein leichtes Schaukeln ist für dich kein Problem</li>
+      </ul>]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>TasksHeadline</Name>
+      <Value><![CDATA[Du kannst im Schlaf unter tosendem Sturm problemlos Segel setzen?]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>Tasks</Name>
+      <Value><![CDATA[<ul>
+          <li>Du peppst die rauhen und kantigen Geschichten unserer weltweit verstreuten Mitarbeiter linguistisch gekonnt auf</li>
+          <li>Dein Instikt lässt dich spielerisch prüfbare Fakten von hanebüchenem Seemannsgarn unterscheiden</li>
+      </ul>]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>BenefitsHeadline</Name>
+      <Value><![CDATA[Bestens ausgerüstet!]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>Benefits</Name>
+      <Value><![CDATA[
+        <ul>
+          <li>Reise zum Ende der Welt</li>
+          <li>Ein loyales Team</li>
+          <li>Remote first: Wir begrüßen ausdrücklich das eigenständige, asynchrone Arbeiten in entlegenen Gegenden</li>
+      </ul>
+      ]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>ContactHeadline</Name>
+      <Value><![CDATA[Frag' unsere Expertin Elaine!]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>Contact</Name>
+      <Value><![CDATA[<p>Elaine Marley</p>
+        <p>elaine.marley@absolventa.de</p>
+        <small>Senior Seefahrt-Personalmanagerin</small>]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>VideoUrl</Name>
+      <Value><![CDATA[https://api.example.com/videos/seemannsgarn]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>Height</Name>
+      <Value><![CDATA[]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>UseResponsiveTemplate</Name>
+      <Value><![CDATA[]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>Color</Name>
+      <Value><![CDATA[#efefef]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>HeaderImageUrl</Name>
+      <Value><![CDATA[https://api.example.com/content/header_image.jpg]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>TraineeGefluester</Name>
+      <Value>false</Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>PraktikumInfo</Name>
+      <Value>false</Value>
+    </FormattedPositionDescription>
+    <HowToApply>
+      <ApplicationMethod>
+        <InternetWebAddress><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></InternetWebAddress>
+      </ApplicationMethod>
+    </HowToApply>
+    <HowToApply>
+      <ApplicationMethod>
+        <InternetWebAddress><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></InternetWebAddress>
+      </ApplicationMethod>
+    </HowToApply>
   </PositionProfile>
 </PositionOpening>
 ```
@@ -104,13 +207,6 @@
       <td>PositionTitle</td>
       <td>Title.</td>
       <td>String</td>
-      <td>required</td>
-    </tr>
-    <tr>
-      <td>JobOfferDescription</td>
-      <td>Description Text. Basic HTML tags (strong em u ol ul li p br a) are
-      allowed, all other tags are going to get stripped out by our application.</td>
-      <td>Text</td>
       <td>required</td>
     </tr>
     <tr>
@@ -176,36 +272,111 @@
       <td>optional</td>
     </tr>
     <tr>
+      <td>DescriptionHeadline</td>
+      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td>Description text of your job ad. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>required</td>
+    </tr>
+    <tr>
+      <td>CompanyDescriptionHeadline</td>
+      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>CompanyDescription</td>
+      <td>Description text of your company. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>QualificationsHeadline</td>
+      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>Qualifications</td>
+      <td>Text summarizing the requirements of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>TasksHeadline</td>
+      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>Tasks</td>
+      <td>Text summarizing the job tasks of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>BenefitsHeadline</td>
+      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>Benefits</td>
+      <td>Text summarizing the job benefits of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>ContactHeadline</td>
+      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>Contact</td>
+      <td>Text summarizing the contact information for the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>VideoUrl</td>
+      <td>URL to embeddable video content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>HeaderImageUrl</td>
+      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>Color</td>
+      <td>Hex code for headline color. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
       <td>TraineeGefluester</td>
       <td>
-        <p>Allows co-publication of this job offer to our job board <a href="https://www.trainee-gefluester.de">trainee-gefluester.de</a> by supplying <code>true</code> or equivalently <code>1</code>. Note that a valid Trainee-Geflüster contract is required.</p>
-        <p>Contact your account manager for activation.</p>
+        <p>Allows co-publication a job offer on our job board TRAINEE-GEFLÜSTER by supplying <code>true</code> (valid TRAINEE-GEFLÜSTER contract required).</p>
+        <p>Contact your account manager if you are interested in this service.</p>
       </td>
       <td>String</td>
       <td>optional</td>
     </tr>
     <tr>
-      <td>CompanyDescription</td>
-      <td>Description text of the company this job offer belongs to.</td>
-      <td>Text</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>UseResponsiveTemplate</td>
+      <td>PraktikumInfo</td>
       <td>
-        If you also submit an HTML representation of the job_offer (by submission of
-        <code>Link</code>) and if your HTML representation behaves responsive, you
-        can set this attribute to <code>true</code>. In this case the iframe serving
-        your HTML content will be displayed for mobile devices, too. If left out or
-        set to false, we will always render a text representation of the job offer.
+        <p>Allows co-publication a job offer on our job board PRAKTIKUM.INFO by supplying <code>true</code> (valid PRAKTIKUM.INFO contract required).</p>
+        <p>Contact your account manager if you are interested in this service.</p>
       </td>
-      <td>Boolean</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>Height</td>
-      <td>Height of the iframe displaying the content of <code>Link</code> in px.</td>
-      <td>Integer</td>
+      <td>String</td>
       <td>optional</td>
     </tr>
   </tbody>
