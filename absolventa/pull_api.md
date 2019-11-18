@@ -267,7 +267,7 @@ data in this format, we can immediately configure a connection:
       <td>application_email</td>
       <td>E-Mail address potential candidates shall send their applications to</td>
       <td>String</td>
-      <td>required Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
+      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
     </tr>
     <tr>
       <td>job_offer_locations</td>
