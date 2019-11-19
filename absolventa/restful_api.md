@@ -46,6 +46,25 @@ List all job offers that are available in our public search interface.
     </tr>
   </tbody>
 </table>
+<table>
+  <tbody>
+    <tr>
+      <td>Parameter</td>
+      <td>Example URL</td>
+      <td>Default value</td>
+    </tr>
+    <tr>
+      <td>page</td>
+      <td>/api/r/job_offers.xml?page=10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>/api/r/job_offers.xml?per_page=50</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Example
 
@@ -71,6 +90,25 @@ List all job offers that are drafts (⇔ unpublished) and therefore haven't been
     </tr>
   </tbody>
 </table>
+<table>
+  <tbody>
+    <tr>
+      <td>Parameter</td>
+      <td>Example URL</td>
+      <td>Default value</td>
+    </tr>
+    <tr>
+      <td>page</td>
+      <td>/api/r/job_offers/drafts.xml?page=10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>/api/r/job_offers/drafts.xml?per_page=50</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Example
 
@@ -93,6 +131,25 @@ List all job offers that are not available to be listed in our public search int
       <td>/api/r/job_offers/expired.xml</td>
       <td>GET</td>
       <td>Absolventa XML</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <tbody>
+    <tr>
+      <td>Parameter</td>
+      <td>Example URL</td>
+      <td>Default value</td>
+    </tr>
+    <tr>
+      <td>page</td>
+      <td>/api/r/job_offers/expired.xml?page=10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>/api/r/job_offers/expired.xml?per_page=50</td>
+      <td>25</td>
     </tr>
   </tbody>
 </table>
