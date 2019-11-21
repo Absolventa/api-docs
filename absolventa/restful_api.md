@@ -52,16 +52,22 @@ List all job offers that are available in our public search interface.
       <td>Parameter</td>
       <td>Example URL</td>
       <td>Default value</td>
+      <td>Minimum</td>
+      <td>Maximum</td>
     </tr>
     <tr>
       <td>page</td>
       <td>/api/r/job_offers.xml?page=10</td>
       <td>1</td>
+      <td>1</td>
+      <td>No artificial limit</td>
     </tr>
     <tr>
       <td>per_page</td>
       <td>/api/r/job_offers.xml?per_page=50</td>
       <td>25</td>
+      <td>1</td>
+      <td>500</td>
     </tr>
   </tbody>
 </table>
@@ -96,11 +102,15 @@ List all job offers that are drafts (⇔ unpublished) and therefore haven't been
       <td>Parameter</td>
       <td>Example URL</td>
       <td>Default value</td>
+      <td>Minimum</td>
+      <td>Maximum</td>
     </tr>
     <tr>
       <td>page</td>
       <td>/api/r/job_offers/drafts.xml?page=10</td>
       <td>1</td>
+      <td>1</td>
+      <td>No artificial limit</td>
     </tr>
     <tr>
       <td>per_page</td>
@@ -140,16 +150,22 @@ List all job offers that are not available to be listed in our public search int
       <td>Parameter</td>
       <td>Example URL</td>
       <td>Default value</td>
+      <td>Minimum</td>
+      <td>Maximum</td>
     </tr>
     <tr>
       <td>page</td>
       <td>/api/r/job_offers/expired.xml?page=10</td>
       <td>1</td>
+      <td>1</td>
+      <td>No artificial limit</td>
     </tr>
     <tr>
       <td>per_page</td>
       <td>/api/r/job_offers/expired.xml?per_page=50</td>
       <td>25</td>
+      <td>1</td>
+      <td>500</td>
     </tr>
   </tbody>
 </table>
