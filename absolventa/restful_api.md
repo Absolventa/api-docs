@@ -116,6 +116,8 @@ List all job offers that are drafts (⇔ unpublished) and therefore haven't been
       <td>per_page</td>
       <td>/api/r/job_offers/drafts.xml?per_page=50</td>
       <td>25</td>
+      <td>1</td>
+      <td>500</td>
     </tr>
   </tbody>
 </table>
