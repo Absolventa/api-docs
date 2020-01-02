@@ -121,6 +121,15 @@
 
 ### Data fields
 
+#### HTML tags
+
+Some text fields allow passing HTML tags. However, to guarantee a good interplay with our
+native UI, not all HTML tags are allowed. The following tags are allowed: <code>strong, em, u, ol, ul, li, p, br, a</code>.
+All other HTML tags will get stripped out automatically. Some HTML tags make use of attributes. We allow the following
+attributes: <code>href, class, target</code>. All other attributes will get stripped out automatically.
+
+#### List of fields
+
 <table>
   <thead>
     <tr>
@@ -161,20 +170,20 @@
     </tr>
     <tr>
       <td>description</td>
-      <td>Description text of your job ad. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Description text of your job ad.</td>
+      <td>Text/HTML</td>
       <td>required</td>
     </tr>
     <tr>
       <td>company_description_headline</td>
-      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
-      <td>Text</td>
+      <td>Headline summarizing the company_description-content.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>company_description</td>
-      <td>Description text of your company. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Description text of your company.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
@@ -185,8 +194,8 @@
     </tr>
     <tr>
       <td>qualifications</td>
-      <td>Text summarizing the requirements of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Text summarizing the requirements of the candiates.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
@@ -197,8 +206,8 @@
     </tr>
     <tr>
       <td>tasks</td>
-      <td>Text summarizing the job tasks of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Text summarizing the job tasks of the candiates.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
@@ -209,8 +218,8 @@
     </tr>
     <tr>
       <td>benefits</td>
-      <td>Text summarizing the job benefits of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Text summarizing the job benefits of the candiates.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
@@ -221,8 +230,8 @@
     </tr>
     <tr>
       <td>contact</td>
-      <td>Text summarizing the contact information for the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Text summarizing the contact information for the candiates.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
