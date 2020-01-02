@@ -11,11 +11,24 @@
   <started_at>2019-11-11T13:14:40+01:00</started_at>
   <ended_at>2019-11-15T23:59:59+01:00</ended_at>
 
+  <!--
+    If the at least one of nodes <city> or <zip> (and optionally street and country) are given
+    on top level (relatively to <job_offer>) like below this comment, we will
+    create one <job_offer_location> object out of it that adds to the <job_offer_locations>
+    list below.
+  -->
   <city>Berlin</city>
   <street>Friedrichstraße 67</street>
   <zip>10318</zip>
   <country>Deutschland</country>
 
+  <!--
+    If you want to submit more than one location,
+    you need to pass it explicitly as <job_offer_locations> list.
+    If you have specified both, one location by top-level nodes
+    like above these lines and locations list like below this comment
+    using the node <job_offer_locations>, we will add them together.
+  -->
   <job_offer_locations>
     <job_offer_location>
       <city>Berlin</city>
