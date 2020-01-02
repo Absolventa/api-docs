@@ -273,7 +273,7 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
       <td>
         Date on which the job offer stops being published to our platform. If not specified, we will
         compute and assign the latest point in time that is allowed w.r.t to your contract and the upper bound.
-        The upper bound for a job offer's runtime of 36 month, so the <code>ended_at</code> value is allowed
+        The upper bound for a job offer's runtime is a toal of 36 month, so the <code>ended_at</code> value is allowed
         to be maximal 36 month after the <code>started_at</code> value, regardless of type of job offer and type
         of your contract.
 
