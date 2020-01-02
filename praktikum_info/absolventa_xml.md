@@ -270,9 +270,21 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
     </tr>
     <tr>
       <td>ended_at</td>
-      <td>Date on which the job offer stops being published to our platform.</td>
+      <td>
+        Date on which the job offer stops being published to our platform. If not specified, we will
+        compute and assign the latest point in time that is allowed w.r.t to your contract and the upper bound.
+        The upper bound for a job offer's runtime of 36 month, so the <code>ended_at</code> value is allowed
+        to be maximal 36 month after the <code>started_at</code> value, regardless of type of job offer and type
+        of your contract.
+
+        Also note that updating the ended_at value is possibly restricted, depending on the <code>mode</code> value.
+        If your job offer has mode <code>premium</code> or <code>premium_plus</code>, then editing
+        the ended_at directly is not allowed after publication.
+
+        The only way of modifying the runtime then is by using the HTTP PUT endpoints for prolongation or ending (quit).
+      </td>
       <td>Datetime</td>
-      <td>optional</td>
+      <td>optional - we will auto-assign this value if left out and determine the latest possible value.</td>
     </tr>
     <tr>
       <td>application_method</td>
