@@ -11,11 +11,24 @@
   <started_at>2019-11-11T13:14:40+01:00</started_at>
   <ended_at>2019-11-15T23:59:59+01:00</ended_at>
 
+  <!--
+    If the at least one of nodes <city> or <zip> (and optionally street and country) are given
+    on top level (relatively to <job_offer>) like below this comment, we will
+    create one <job_offer_location> object out of it that adds to the <job_offer_locations>
+    list below.
+  -->
   <city>Berlin</city>
   <street>Friedrichstraße 67</street>
   <zip>10318</zip>
   <country>Deutschland</country>
 
+  <!--
+    If you want to submit more than one location,
+    you need to pass it explicitly as <job_offer_locations> list.
+    If you have specified both, one location by top-level nodes
+    like above these lines and locations list like below this comment
+    using the node <job_offer_locations>, we will add them together.
+  -->
   <job_offer_locations>
     <job_offer_location>
       <city>Berlin</city>
@@ -108,6 +121,15 @@
 
 ### Data fields
 
+#### HTML tags
+
+Some text fields allow passing HTML tags. However, to guarantee a good interplay with our
+native UI, not all HTML tags are allowed. The following tags are allowed: <code>strong, em, u, ol, ul, li, p, br, a</code>.
+All other HTML tags will get stripped out automatically. Some HTML tags make use of attributes. We allow the following
+attributes: <code>href, class, target</code>. All other attributes will get stripped out automatically.
+
+#### List of fields
+
 <table>
   <thead>
     <tr>
@@ -148,20 +170,20 @@
     </tr>
     <tr>
       <td>description</td>
-      <td>Description text of your job ad. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Description text of your job ad.</td>
+      <td>Text/HTML</td>
       <td>required</td>
     </tr>
     <tr>
       <td>company_description_headline</td>
-      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
-      <td>Text</td>
+      <td>Headline summarizing the company_description-content.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>company_description</td>
-      <td>Description text of your company. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Description text of your company.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
@@ -172,8 +194,8 @@
     </tr>
     <tr>
       <td>qualifications</td>
-      <td>Text summarizing the requirements of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Text summarizing the requirements of the candiates.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
@@ -184,8 +206,8 @@
     </tr>
     <tr>
       <td>tasks</td>
-      <td>Text summarizing the job tasks of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Text summarizing the job tasks of the candiates.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
@@ -196,8 +218,8 @@
     </tr>
     <tr>
       <td>benefits</td>
-      <td>Text summarizing the job benefits of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Text summarizing the job benefits of the candiates.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
@@ -208,8 +230,8 @@
     </tr>
     <tr>
       <td>contact</td>
-      <td>Text summarizing the contact information for the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
+      <td>Text summarizing the contact information for the candiates.</td>
+      <td>Text/HTML</td>
       <td>optional</td>
     </tr>
     <tr>
@@ -248,9 +270,21 @@
     </tr>
     <tr>
       <td>ended_at</td>
-      <td>Date on which the job offer stops being published to our platform.</td>
+      <td>
+        Date on which the job offer stops being published to our platform. If not specified, we will
+        compute and assign the latest point in time that is allowed w.r.t to your contract and the upper bound.
+        The upper bound for a job offer's runtime is a toal of 36 month, so the <code>ended_at</code> value is allowed
+        to be maximal 36 month after the <code>started_at</code> value, regardless of type of job offer and type
+        of your contract.
+
+        Also note that updating the ended_at value is possibly restricted, depending on the <code>mode</code> value.
+        If your job offer has mode <code>premium</code> or <code>premium_plus</code>, then editing
+        the ended_at directly is not allowed after publication.
+
+        The only way of modifying the runtime then is by using the HTTP PUT endpoints for prolongation or ending (quit).
+      </td>
       <td>Datetime</td>
-      <td>optional</td>
+      <td>optional - we will auto-assign this value if left out and determine the latest possible value.</td>
     </tr>
     <tr>
       <td>trainee_gefluester</td>
