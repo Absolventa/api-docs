@@ -53,29 +53,6 @@
       <Value>premium</Value>
     </FormattedPositionDescription>
     <FormattedPositionDescription>
-      <Name>JobOfferDescription</Name>
-      <Value><![CDATA[<p>
-            Unser renormiertes Seefahrtsunternehmen heuert verlässlich und regelmäßig die besten
-            Seefrauen und -männer (w/m/d) östlich des Atlantiks an. Generationen von Seefahrtsexperten
-            haben ihre Karriere mit ersten nautischen Schritten in unserem Unternehmen gestartet.
-      </p>]]></Value>
-    </FormattedPositionDescription>
-    <FormattedPositionDescription>
-      <Name>JobOfferQualifications</Name>
-      <Value><![CDATA[<ul>
-          <li>Du kannst schwimmen (Seepferdchen notwendig)</li>
-          <li>Ein leichtes Schaukeln ist für dich kein Problem</li>
-      </ul>]]></Value>
-    </FormattedPositionDescription>
-    <FormattedPositionDescription>
-      <Name>CompanyDescriptionHeadline</Name>
-      <Value><![CDATA[Unser Geschäft ist kein Voodoo!]]></Value>
-    </FormattedPositionDescription>
-    <FormattedPositionDescription>
-      <Name>CompanyDescription</Name>
-      <Value><![CDATA[<p>Marley & Threepwood Ventures - Ihr Partner in Sachen Seefahrt- und Handelsbeziehungen</p>]]></Value>
-    </FormattedPositionDescription>
-    <FormattedPositionDescription>
       <Name>DescriptionHeadline</Name>
       <Value><![CDATA[Komm' an Bord!]]></Value>
     </FormattedPositionDescription>
@@ -88,7 +65,7 @@
       </p>]]></Value>
     </FormattedPositionDescription>
     <FormattedPositionDescription>
-      <Name>Qualifications</Name>
+      <Name>QualificationsHeadline</Name>
       <Value><![CDATA[Du bist mutig genug, in allen Ozeanen dieser Welt zu schwimmen?]]></Value>
     </FormattedPositionDescription>
     <FormattedPositionDescription>
@@ -97,6 +74,14 @@
           <li>Du kannst schwimmen (Seepferdchen notwendig)</li>
           <li>Ein leichtes Schaukeln ist für dich kein Problem</li>
       </ul>]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>CompanyDescriptionHeadline</Name>
+      <Value><![CDATA[Unser Geschäft ist kein Voodoo!]]></Value>
+    </FormattedPositionDescription>
+    <FormattedPositionDescription>
+      <Name>CompanyDescription</Name>
+      <Value><![CDATA[<p>Marley & Threepwood Ventures - Ihr Partner in Sachen Seefahrt- und Handelsbeziehungen</p>]]></Value>
     </FormattedPositionDescription>
     <FormattedPositionDescription>
       <Name>TasksHeadline</Name>
