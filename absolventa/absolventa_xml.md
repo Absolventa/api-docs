@@ -107,11 +107,6 @@
 
   <color>#efefef</color>
 
-  <!-- These XML fields are deprecated -->
-  <external_url><![CDATA[https://www.example.com/jobs/seefahrt]]></external_url>
-  <use_responsive_template>true</use_responsive_template>
-  <height>1234</height>
-
   <contact_name>Elaine Marley</contact_name>
   <contact_email>elaine.marley@absolventa.de</contact_email>
   <contact_phone>+49 0123456</contact_phone>
