@@ -28,5 +28,4 @@ https://www.azubi.de
 
 https://www.trainee-gefluester.de
 
-* Please [contact our team](mailto:service@absolventa.de) if you are interested in publication
-of job offers to our job board TRAINEE-GEFLÜSTER.
+* Processsing data streams served via HTTP of different format by our [Pull API](trainee_gefluester/pull_api.md)
