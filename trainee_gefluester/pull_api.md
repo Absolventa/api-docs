@@ -149,16 +149,6 @@ data in this format, we can immediately configure a connection:
       <td>required</td>
     </tr>
     <tr>
-      <td>mode</td>
-      <td>
-        Possible values: <code>standard</code>. <code>premium</code> and <code>premium_plus</code>.
-        Defaults to <code>standard</code> if omitted.
-        Cannot be changed after creation.
-      </td>
-      <td>String</td>
-      <td>optional</td>
-    </tr>
-    <tr>
       <td>title</td>
       <td>Title</td>
       <td>String</td>
