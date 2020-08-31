@@ -19,8 +19,8 @@ data in this format, we can immediately configure a connection:
 
     <application_email>elaine.marley@absolventa.de</application_email>
     <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
-    <started_at>2019-11-11T13:14:40+01:00</started_at>
-    <ended_at>2019-11-15T23:59:59+01:00</ended_at>
+    <started_at>2020-11-11T13:14:40+01:00</started_at>
+    <ended_at>2020-11-15T23:59:59+01:00</ended_at>
 
     <city>Berlin</city>
     <street>Friedrichstraße 67</street>
@@ -261,12 +261,6 @@ data in this format, we can immediately configure a connection:
         been published this field cannot be edited any longer. If left out, we immediately publish your
         job offer.
       </td>
-      <td>Datetime</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>apprenticeship_started_at</td>
-      <td>Date on which the apprenticeship will start. Only relevant for job ads targeted at https://www.azubi.de.</td>
       <td>Datetime</td>
       <td>optional</td>
     </tr>
