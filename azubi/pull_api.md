@@ -27,11 +27,6 @@ data in this format, we can immediately configure a connection:
     <minimal_degree>certificate</minimal_degree>
     <duration>36</duration>
 
-    <city>Berlin</city>
-    <street>Friedrichstraße 67</street>
-    <zip>10318</zip>
-    <country>Deutschland</country>
-
     <job_offer_locations>
       <job_offer_location>
         <city>Berlin</city>
