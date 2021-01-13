@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Absolventa API" src="images/api_logo.svg" width="300px">
+  <img alt="Absolventa API" src="images/api_logo.svg" width="200px">
   <h1>Absolventa API documentation</h1>
 </div>
 <br>
