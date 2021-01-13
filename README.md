@@ -2,6 +2,7 @@
   <img alt="Absolventa API" src="images/api_logo.svg" width="300px">
 </div>
 <br>
+
 # Absolventa API documentation
 
 This repository provides information material on how to integrate
