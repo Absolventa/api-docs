@@ -15,17 +15,11 @@ data in this format, we can immediately configure a connection:
   <job_offer>
     <external_id>ABC-12345</external_id>
     <title>Praktikum Seefahrt (w/m/d)</title>
-    <mode>premium</mode>
 
     <application_email>elaine.marley@absolventa.de</application_email>
     <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
     <started_at>2019-11-11T13:14:40+01:00</started_at>
     <ended_at>2019-11-15T23:59:59+01:00</ended_at>
-
-    <city>Berlin</city>
-    <street>Friedrichstraße 67</street>
-    <zip>10318</zip>
-    <country>Deutschland</country>
 
     <job_offer_locations>
       <job_offer_location>
@@ -57,8 +51,8 @@ data in this format, we can immediately configure a connection:
     <tasks>
       <![CDATA[
         <ul>
-          <li>Du peppst die rauhen und kantigen Geschichten unserer weltweit verstreuten Mitarbeiter linguistisch gekonnt             auf</li>
-          <li>Dein Instikt lässt dich spielerisch prüfbare Fakten von hanebüchenem Seemannsgarn unterscheiden</li>
+          <li>Du peppst die rauhen und kantigen Geschichten unserer weltweit verstreuten Mitarbeiter linguistisch gekonnt auf</li>
+          <li>Dein Instinkt lässt dich spielerisch prüfbare Fakten von hanebüchenem Seemannsgarn unterscheiden</li>
         </ul>
       ]]>
     </tasks>
@@ -130,16 +124,6 @@ data in this format, we can immediately configure a connection:
       <td>required</td>
     </tr>
     <tr>
-      <td>mode</td>
-      <td>
-        Possible values: <code>standard</code>. <code>premium</code> and <code>premium_plus</code>.
-        Defaults to <code>standard</code> if omitted.
-        Cannot be changed after creation.
-      </td>
-      <td>String</td>
-      <td>optional</td>
-    </tr>
-    <tr>
       <td>title</td>
       <td>Title</td>
       <td>String</td>
@@ -147,7 +131,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>description_headline</td>
-      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -159,7 +143,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>company_description_headline</td>
-      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -171,7 +155,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>qualifications_headline</td>
-      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -183,7 +167,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>tasks_headline</td>
-      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -195,7 +179,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>benefits_headline</td>
-      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -207,7 +191,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>contact_headline</td>
-      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -219,19 +203,19 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>video_url</td>
-      <td>URL to embeddable video content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>URL to embeddable video content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>header_image_url</td>
-      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>color</td>
-      <td>Hex code for headline color. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Hex code for headline color. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -242,12 +226,6 @@ data in this format, we can immediately configure a connection:
         been published this field cannot be edited any longer. If left out, we immediately publish your
         job offer.
       </td>
-      <td>Datetime</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>apprenticeship_started_at</td>
-      <td>Date on which the apprenticeship will start. Only relevant for job ads targeted at https://www.azubi.de.</td>
       <td>Datetime</td>
       <td>optional</td>
     </tr>

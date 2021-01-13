@@ -11,13 +11,10 @@ data in this format, we can immediately configure a connection:
 
 ```XML
 <?xml version='1.0' encoding='utf-8' ?>
-
-
 <job_offers type='array'>
   <job_offer>
     <external_id>ABC-12345</external_id>
     <title>Praktikum Seefahrt (w/m/d)</title>
-    <mode>premium</mode>
 
     <application_email>elaine.marley@absolventa.de</application_email>
     <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
@@ -141,16 +138,6 @@ data in this format, we can immediately configure a connection:
       <td>required</td>
     </tr>
     <tr>
-      <td>mode</td>
-      <td>
-        Possible values: <code>standard</code>. <code>premium</code> and <code>premium_plus</code>.
-        Defaults to <code>standard</code> if omitted.
-        Cannot be changed after creation.
-      </td>
-      <td>String</td>
-      <td>optional</td>
-    </tr>
-    <tr>
       <td>title</td>
       <td>Title</td>
       <td>String</td>
@@ -158,7 +145,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>description_headline</td>
-      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -170,7 +157,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>company_description_headline</td>
-      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -182,7 +169,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>qualifications_headline</td>
-      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -194,7 +181,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>tasks_headline</td>
-      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -206,7 +193,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>benefits_headline</td>
-      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -218,7 +205,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>contact_headline</td>
-      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -230,19 +217,19 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>video_url</td>
-      <td>URL to embeddable video content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>URL to embeddable video content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>header_image_url</td>
-      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>color</td>
-      <td>Hex code for headline color. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Hex code for headline color. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -300,14 +287,14 @@ data in this format, we can immediately configure a connection:
         <span class='label label-info'>duration</span>
       </td>
       <td>
-        Duration of the apprenticeship in months.
+        Duration of the apprenticeship in months. Only relevant for job ads targeted at https://www.azubi.de.
       </td>
       <td>Integer</td>
       <td>optional</td>
     <tr>
       <td>minimal_degree</td>
       <td>
-        Minimal graduation degree the candidates should own.
+        Minimal graduation degree the candidates should own. Only relevant for job ads targeted at https://www.azubi.de.
         Possible values:
         <ul>
           <li><code>basic</code> (Hauptschulabschluss)</li>

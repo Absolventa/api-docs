@@ -123,28 +123,12 @@
       <Value><![CDATA[https://api.example.com/videos/seemannsgarn]]></Value>
     </FormattedPositionDescription>
     <FormattedPositionDescription>
-      <Name>Height</Name>
-      <Value><![CDATA[]]></Value>
-    </FormattedPositionDescription>
-    <FormattedPositionDescription>
-      <Name>UseResponsiveTemplate</Name>
-      <Value><![CDATA[]]></Value>
-    </FormattedPositionDescription>
-    <FormattedPositionDescription>
       <Name>Color</Name>
       <Value><![CDATA[#efefef]]></Value>
     </FormattedPositionDescription>
     <FormattedPositionDescription>
       <Name>HeaderImageUrl</Name>
       <Value><![CDATA[https://api.example.com/content/header_image.jpg]]></Value>
-    </FormattedPositionDescription>
-    <FormattedPositionDescription>
-      <Name>TraineeGefluester</Name>
-      <Value>false</Value>
-    </FormattedPositionDescription>
-    <FormattedPositionDescription>
-      <Name>PraktikumInfo</Name>
-      <Value>false</Value>
     </FormattedPositionDescription>
     <HowToApply>
       <ApplicationMethod>
@@ -258,7 +242,7 @@
     </tr>
     <tr>
       <td>DescriptionHeadline</td>
-      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -270,7 +254,7 @@
     </tr>
     <tr>
       <td>CompanyDescriptionHeadline</td>
-      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -282,7 +266,7 @@
     </tr>
     <tr>
       <td>QualificationsHeadline</td>
-      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -294,7 +278,7 @@
     </tr>
     <tr>
       <td>TasksHeadline</td>
-      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -306,7 +290,7 @@
     </tr>
     <tr>
       <td>BenefitsHeadline</td>
-      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -318,7 +302,7 @@
     </tr>
     <tr>
       <td>ContactHeadline</td>
-      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -330,38 +314,20 @@
     </tr>
     <tr>
       <td>VideoUrl</td>
-      <td>URL to embeddable video content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>URL to embeddable video content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>HeaderImageUrl</td>
-      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>Color</td>
-      <td>Hex code for headline color. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Hex code for headline color. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>TraineeGefluester</td>
-      <td>
-        <p>Allows co-publication a job offer on our job board TRAINEE-GEFLÜSTER by supplying <code>true</code> (valid TRAINEE-GEFLÜSTER contract required).</p>
-        <p>Contact your account manager if you are interested in this service.</p>
-      </td>
-      <td>String</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>PraktikumInfo</td>
-      <td>
-        <p>Allows co-publication a job offer on our job board PRAKTIKUM.INFO by supplying <code>true</code> (valid PRAKTIKUM.INFO contract required).</p>
-        <p>Contact your account manager if you are interested in this service.</p>
-      </td>
-      <td>String</td>
       <td>optional</td>
     </tr>
   </tbody>

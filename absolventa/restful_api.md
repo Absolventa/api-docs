@@ -25,7 +25,6 @@ blank or fill it with a fallback letter like <code>"X"</code>.
 * [Create a job offer using HR-XML](#create-a-job-offer-using-hr-xml)
 * [Update a job offer using HR-XML](#update-a-job-offer-using-hr-xml)
 * [End a job offer ](#end-a-job-offer)
-* [Prolongate a job offer](#prolongate-a-job-offer)
 
 
 ### List published job offers
@@ -320,17 +319,6 @@ curl -i -X POST https://www.absolventa.de/api/r/hrxml/job_offers.xml \
                    </DeliveryAddress>
                  </PostalAddress>
                </PhysicalLocation>
-               <PhysicalLocation>
-                 <PostalAddress>
-                   <CountryCode>DE</CountryCode>
-                   <PostalCode>63067</PostalCode>
-                   <Municipality>Offenbach am Main</Municipality>
-                   <DeliveryAddress>
-                     <StreetName>Hölderlinstraße</StreetName>
-                     <BuildingNumber>42</BuildingNumber>
-                   </DeliveryAddress>
-                 </PostalAddress>
-               </PhysicalLocation>
                <PositionTitle><![CDATA[Trainee Web Development (m/w)]]></PositionTitle>
              </PositionDetail>
              <FormattedPositionDescription>
@@ -349,10 +337,6 @@ curl -i -X POST https://www.absolventa.de/api/r/hrxml/job_offers.xml \
                <Value>
                  <![CDATA[Here is a nice description]]>
                </Value>
-             </FormattedPositionDescription>
-             <FormattedPositionDescription>
-               <Name>TraineeGefluester</Name>
-               <Value>1</Value>
              </FormattedPositionDescription>
              <HowToApply>
                <ApplicationMethod>
@@ -420,17 +404,6 @@ curl -i -X PUT https://www.absolventa.de/api/r/hrxml/job_offers/12345.xml \
                    </DeliveryAddress>
                  </PostalAddress>
                </PhysicalLocation>
-               <PhysicalLocation>
-                 <PostalAddress>
-                   <CountryCode>DE</CountryCode>
-                   <PostalCode>63067</PostalCode>
-                   <Municipality>Offenbach am Main</Municipality>
-                   <DeliveryAddress>
-                     <StreetName>Hölderlinstraße</StreetName>
-                     <BuildingNumber>42</BuildingNumber>
-                   </DeliveryAddress>
-                 </PostalAddress>
-               </PhysicalLocation>
                <PositionTitle><![CDATA[Trainee Web Development (m/w)]]></PositionTitle>
              </PositionDetail>
              <FormattedPositionDescription>
@@ -449,10 +422,6 @@ curl -i -X PUT https://www.absolventa.de/api/r/hrxml/job_offers/12345.xml \
                <Value>
                  <![CDATA[Here is a nice description]]>
                </Value>
-             </FormattedPositionDescription>
-             <FormattedPositionDescription>
-               <Name>TraineeGefluester</Name>
-               <Value>1</Value>
              </FormattedPositionDescription>
              <HowToApply>
                <ApplicationMethod>
@@ -505,32 +474,4 @@ curl -X PUT -H 'Accept: application/xml' \
             -u 28a622e8ea6665433729932112d1d9cc:X \
             -d '<ended_at>2019-07-28T14:27:31+02:00</ended_at>' \
             https://www.absolventa.de/api/r/job_offers/12345/quit.xml
-```
-
-### Prolongate a job offer
-
-Prior to the expiration date, the runtime of a <em>standard</em> job offer can be extended by another 12 months.
-
-<table>
-  <tbody>
-  <tr>
-    <td>Endpoint</td>
-    <td>HTTP method</td>
-    <td>Data Format</td>
-  </tr>
-  <tr>
-    <td>/api/r/job_offers/{id}/prolongate.xml</td>
-    <td>PUT</td>
-    <td>Absolventa XML or HR-XML</td>
-  </tr>
-  </tbody>
-</table>
-
-#### Examples
-
-```
-curl -X PUT -H 'Accept: application/xml' \
-            -H 'Content-Type: application/xml'&#x000A; \
-            -u 28a622e8ea6665433729932112d1d9cc:X \
-            https://www.absolventa.de/api/r/job_offers/12345/prolongate.xml
 ```

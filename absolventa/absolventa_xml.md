@@ -144,7 +144,7 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
     <tr>
       <td>mode</td>
       <td>
-        Possible values: <code>standard</code>. <code>premium</code> and <code>premium_plus</code>.
+        Possible values: <code>standard</code> and <code>premium</code>.
         Defaults to <code>standard</code> if omitted.
         Cannot be changed after creation.
       </td>
@@ -159,7 +159,7 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
     </tr>
     <tr>
       <td>description_headline</td>
-      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the introductory description content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -171,7 +171,7 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
     </tr>
     <tr>
       <td>company_description_headline</td>
-      <td>Headline summarizing the company_description-content.</td>
+      <td>Headline summarizing the company_description content.</td>
       <td>Text/HTML</td>
       <td>optional</td>
     </tr>
@@ -183,7 +183,7 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
     </tr>
     <tr>
       <td>qualifications_headline</td>
-      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the introductory qualifications content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -195,7 +195,7 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
     </tr>
     <tr>
       <td>tasks_headline</td>
-      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the tasks content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -207,7 +207,7 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
     </tr>
     <tr>
       <td>benefits_headline</td>
-      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the benefits content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -219,7 +219,7 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
     </tr>
     <tr>
       <td>contact_headline</td>
-      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the contact content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -231,19 +231,19 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
     </tr>
     <tr>
       <td>video_url</td>
-      <td>URL to embeddable video content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>URL to embeddable video content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>header_image_url</td>
-      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>color</td>
-      <td>Hex code for headline color. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Hex code for headline color. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -267,37 +267,11 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
       <td>ended_at</td>
       <td>
         Date on which the job offer stops being published to our platform. If not specified, we will
-        compute and assign the latest point in time that is allowed w.r.t to your contract and the upper bound.
-        The upper bound for a job offer's runtime is a toal of 36 month, so the <code>ended_at</code> value is allowed
-        to be maximal 36 month after the <code>started_at</code> value, regardless of type of job offer and type
-        of your contract.
-
-        Also note that updating the ended_at value is possibly restricted, depending on the <code>mode</code> value.
-        If your job offer has mode <code>premium</code> or <code>premium_plus</code>, then editing
-        the ended_at directly is not allowed after publication.
-
-        The only way of modifying the runtime then is by using the HTTP PUT endpoints for prolongation or ending (quit).
+        compute and assign the latest point in time that is allowed w.r.t to your contract.
+        Also note that updating the ended_at value is possibly restricted.
       </td>
       <td>Datetime</td>
       <td>optional - we will auto-assign this value if left out and determine the latest possible value.</td>
-    </tr>
-    <tr>
-      <td>trainee_gefluester</td>
-      <td>
-        <p>Allows co-publication a job offer on our job board TRAINEE-GEFLÜSTER by supplying <code>true</code> (valid TRAINEE-GEFLÜSTER contract required).</p>
-        <p>Contact your account manager if you are interested in this service.</p>
-      </td>
-      <td>String</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>praktikum_info</td>
-      <td>
-        <p>Allows co-publication a job offer on our job board PRAKTIKUM.INFO by supplying <code>true</code> (valid PRAKTIKUM.INFO contract required).</p>
-        <p>Contact your account manager if you are interested in this service.</p>
-      </td>
-      <td>String</td>
-      <td>optional</td>
     </tr>
     <tr>
       <td>application_method</td>
