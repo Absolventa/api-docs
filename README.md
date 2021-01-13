@@ -7,16 +7,16 @@ your application with our job boards.
 
 https://www.absolventa.de
 
-* [RESTful API](absolventa/restful_api.md) based on XML
 * Processsing data streams served via HTTP of different format by our [Pull API](absolventa/pull_api.md)
+* [RESTful API](absolventa/restful_api.md) based on XML
 
 
 ### PRAKTIKUM.INFO
 
 https://www.praktikum.info
 
-* [RESTful API](praktikum_info/restful_api.md) based on XML
 * Processsing data streams served via HTTP of different format by our [Pull API](praktikum_info/pull_api.md)
+* [RESTful API](praktikum_info/restful_api.md) based on XML
 
 ### AZUBI.DE
 

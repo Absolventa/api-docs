@@ -15,17 +15,11 @@ data in this format, we can immediately configure a connection:
   <job_offer>
     <external_id>ABC-12345</external_id>
     <title>Trainee Seefahrt (w/m/d)</title>
-    <mode>premium</mode>
 
     <application_email>elaine.marley@absolventa.de</application_email>
     <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
     <started_at>2020-11-11T13:14:40+01:00</started_at>
     <ended_at>2020-11-15T23:59:59+01:00</ended_at>
-
-    <city>Berlin</city>
-    <street>Friedrichstraße 67</street>
-    <zip>10318</zip>
-    <country>Deutschland</country>
 
     <job_offer_locations>
       <job_offer_location>
@@ -111,24 +105,6 @@ data in this format, we can immediately configure a connection:
   </job_offer>
 </job_offers>
 ```
-### Data fields
-
-<table>
-  <thead>
-    <tr>
-      <th>attribute</th>
-      <th>value</th>
-      <th>type</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>external_id</td>
-      <td>Your internal identifier of the record</td>
-      <td>String</td>
-      <td>required</td>
-    </tr>
 
 ### Data fields
 
@@ -156,7 +132,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>description_headline</td>
-      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the introductory description-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -168,7 +144,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>company_description_headline</td>
-      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the company_description-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -180,7 +156,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>qualifications_headline</td>
-      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the introductory qualifications-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -192,7 +168,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>tasks_headline</td>
-      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the tasks-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -204,7 +180,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>benefits_headline</td>
-      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the benefits-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -216,7 +192,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>contact_headline</td>
-      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Headline summarizing the contact-content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -228,19 +204,19 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>video_url</td>
-      <td>URL to embeddable video content. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>URL to embeddable video content. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>header_image_url</td>
-      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>color</td>
-      <td>Hex code for headline color. Only allowed for <code>premium</code> or <code>premium_plus</code> job ads.</td>
+      <td>Hex code for headline color. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
