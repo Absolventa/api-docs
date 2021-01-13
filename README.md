@@ -1,9 +1,8 @@
 <div align="center">
   <img alt="Absolventa API" src="images/api_logo.svg" width="300px">
+  <h1>Absolventa API documentation</h1>
 </div>
 <br>
-
-# Absolventa API documentation
 
 This repository provides information material on how to integrate
 your application with our job boards.
