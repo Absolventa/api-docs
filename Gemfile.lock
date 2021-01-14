@@ -1,0 +1,20 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mini_portile2 (2.5.0)
+    nokogiri (1.11.1)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
+    racc (1.5.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri (~> 1.11.1)
+
+RUBY VERSION
+   ruby 2.6.5p114
+
+BUNDLED WITH
+   1.17.2
