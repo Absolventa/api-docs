@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="job_offers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="job_offer" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType mixed="true">
+            <xs:sequence>
+              <xs:element type="xs:string" name="external_id" minOccurs="0"/>
+              <xs:element type="xs:string" name="title" minOccurs="0"/>
+              <xs:element type="xs:string" name="application_email" minOccurs="0"/>
+              <xs:element type="xs:string" name="application_url" minOccurs="0"/>
+              <xs:element type="xs:dateTime" name="started_at" minOccurs="0"/>
+              <xs:element type="xs:dateTime" name="ended_at" minOccurs="0"/>
+              <xs:element name="job_offer_locations" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="job_offer_location" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="city"/>
+                          <xs:element type="xs:string" name="street"/>
+                          <xs:element type="xs:short" name="zip"/>
+                          <xs:element type="xs:string" name="country"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="description_headline" minOccurs="0"/>
+              <xs:element type="xs:string" name="description" minOccurs="0"/>
+              <xs:element type="xs:string" name="tasks_headline" minOccurs="0"/>
+              <xs:element type="xs:string" name="tasks" minOccurs="0"/>
+              <xs:element type="xs:string" name="qualifications_headline" minOccurs="0"/>
+              <xs:element type="xs:string" name="qualifications" minOccurs="0"/>
+              <xs:element type="xs:string" name="benefits_headline" minOccurs="0"/>
+              <xs:element type="xs:string" name="benefits" minOccurs="0"/>
+              <xs:element type="xs:string" name="contact_headline" minOccurs="0"/>
+              <xs:element type="xs:string" name="contact" minOccurs="0"/>
+              <xs:element type="xs:string" name="company_description_headline" minOccurs="0"/>
+              <xs:element type="xs:string" name="company_description" minOccurs="0"/>
+              <xs:element type="xs:string" name="video_url" minOccurs="0"/>
+              <xs:element type="xs:string" name="header_image_url" minOccurs="0"/>
+              <xs:element type="xs:string" name="color" minOccurs="0"/>
+              <xs:element type="xs:string" name="custom_company_title" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="type"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
