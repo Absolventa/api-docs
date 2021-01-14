@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job_offer>
+  <title>Praktikum Seefahrt (w/m/d)</title>
+  <mode>premium</mode>
+
+  <application_email>elaine.marley@absolventa.de</application_email>
+  <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
+  <started_at>2019-11-11T13:14:40+01:00</started_at>
+  <ended_at>2019-11-15T23:59:59+01:00</ended_at>
+  <city>Berlin</city>
+  <street>Friedrichstraße 67</street>
+  <zip>10318</zip>
+  <country>Deutschland</country>
+
+  <job_offer_locations>
+    <job_offer_location>
+      <city>Berlin</city>
+      <street>Greifswalder Straße 212</street>
+      <zip>10405</zip>
+      <country>Deutschland</country>
+    </job_offer_location>
+    <job_offer_location>
+      <city>Berlin</city>
+      <street>Oranienburger Straße 33</street>
+      <zip>10178</zip>
+      <country>Deutschland</country>
+    </job_offer_location>
+  </job_offer_locations>
+
+  <description_headline>Komm' an Bord!</description_headline>
+  <description>
+    <![CDATA[
+      <p>
+        Unser renormiertes Seefahrtsunternehmen heuert verlässlich und regelmäßig die besten
+        Seefrauen und -männer (w/m/d) östlich des Atlantiks an. Generationen von Seefahrtsexperten
+        haben ihre Karriere mit ersten nautischen Schritten in unserem Unternehmen gestartet.
+      </p>
+    ]]>
+  </description>
+
+  <qualifications_headline>Du bist mutig genug, in allen Ozeanen dieser Welt zu schwimmen?</qualifications_headline>
+  <qualifications>
+    <![CDATA[
+      <ul>
+        <li>Du kannst schwimmen (Seepferdchen notwendig)</li>
+        <li>Ein leichtes Schaukeln ist für dich kein Problem</li>
+      </ul>
+    ]]>
+  </qualifications>
+
+  <tasks_headline>Du kannst im Schlaf unter tosendem Sturm problemlos Segel setzen?</tasks_headline>
+  <tasks>
+    <![CDATA[
+      <ul>
+        <li>Du peppst die rauhen und kantigen Geschichten unserer weltweit verstreuten Mitarbeiter linguistisch gekonnt auf</li>
+        <li>Dein Instikt lässt dich spielerisch prüfbare Fakten von hanebüchenem Seemannsgarn unterscheiden</li>
+      </ul>
+    ]]>
+  </tasks>
+
+  <benefits_headline>Bestens ausgerüstet!</benefits_headline>
+  <benefits>
+    <![CDATA[
+      <ul>
+        <li>Reise zum Ende der Welt</li>
+        <li>Ein loyales Team</li>
+        <li>Remote first: Wir begrüßen ausdrücklich das eigenständige, asynchrone Arbeiten in entlegenen Gegenden</li>
+      </ul>
+    ]]>
+  </benefits>
+
+  <company_description_headline>Unser Geschäft ist kein Voodoo!</company_description_headline>
+  <company_description>
+    <![CDATA[
+      <p>Marley & Threepwood Ventures - Ihr Partner in Sachen Seefahrt- und Handelsbeziehungen</p>
+    ]]>
+  </company_description>
+
+  <video_url><![CDATA[https://api.example.com/videos/seemannsgarn]]></video_url>
+  <header_image_url><![CDATA[https://api.example.com/content/header_image.jpg]]></header_image_url>
+
+  <contact_headline>Frag' unsere Expertin Elaine!</contact_headline>
+  <contact>
+    <![CDATA[
+      <p>Elaine Marley</p>
+      <p>elaine.marley@absolventa.de</p>
+      <small>Senior Seefahrt-Personalmanagerin</small>
+    ]]>
+  </contact>
+
+  <color>#efefef</color>
+
+  <contact_name>Elaine Marley</contact_name>
+  <contact_email>elaine.marley@absolventa.de</contact_email>
+  <contact_phone>+49 0123456</contact_phone>
+  <contact_position>Recruiter</contact_position>
+</job_offer>

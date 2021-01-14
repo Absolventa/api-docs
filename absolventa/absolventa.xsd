@@ -1,0 +1,53 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="job_offer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="title"/>
+        <xs:element type="xs:string" name="mode"/>
+        <xs:element type="xs:string" name="application_email"/>
+        <xs:element type="xs:string" name="application_url"/>
+        <xs:element type="xs:dateTime" name="started_at"/>
+        <xs:element type="xs:dateTime" name="ended_at"/>
+        <xs:element type="xs:string" name="city"/>
+        <xs:element type="xs:string" name="street"/>
+        <xs:element type="xs:short" name="zip"/>
+        <xs:element type="xs:string" name="country"/>
+        <xs:element name="job_offer_locations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="job_offer_location" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="city"/>
+                    <xs:element type="xs:string" name="street"/>
+                    <xs:element type="xs:short" name="zip"/>
+                    <xs:element type="xs:string" name="country"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="description_headline"/>
+        <xs:element type="xs:string" name="description"/>
+        <xs:element type="xs:string" name="qualifications_headline"/>
+        <xs:element type="xs:string" name="qualifications"/>
+        <xs:element type="xs:string" name="tasks_headline"/>
+        <xs:element type="xs:string" name="tasks"/>
+        <xs:element type="xs:string" name="benefits_headline"/>
+        <xs:element type="xs:string" name="benefits"/>
+        <xs:element type="xs:string" name="company_description_headline"/>
+        <xs:element type="xs:string" name="company_description"/>
+        <xs:element type="xs:string" name="video_url"/>
+        <xs:element type="xs:string" name="header_image_url"/>
+        <xs:element type="xs:string" name="contact_headline"/>
+        <xs:element type="xs:string" name="contact"/>
+        <xs:element type="xs:string" name="color"/>
+        <xs:element type="xs:string" name="contact_name"/>
+        <xs:element type="xs:string" name="contact_email"/>
+        <xs:element type="xs:string" name="contact_phone"/>
+        <xs:element type="xs:string" name="contact_position"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
