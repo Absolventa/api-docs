@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'nokogiri'
 
 def validate(document_path, schema_path)
