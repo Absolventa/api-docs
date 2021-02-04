@@ -106,11 +106,6 @@
   </contact>
 
   <color>#efefef</color>
-
-  <contact_name>Elaine Marley</contact_name>
-  <contact_email>elaine.marley@absolventa.de</contact_email>
-  <contact_phone>+49 0123456</contact_phone>
-  <contact_position>Recruiter</contact_position>
 </job_offer>
 ```
 
@@ -136,15 +131,10 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
   </thead>
   <tbody>
     <tr>
-      <td>id</td>
-      <td>Our database ID of the job offer record</td>
-      <td>String</td>
-      <td>required</td>
-    </tr>
-    <tr>
       <td>mode</td>
       <td>
-        Possible values: <code>standard</code> and <code>premium</code>.
+        This value needs to to match the booked contract.
+        Possible values: <code>standard</code> or <code>premium</code>.
         Defaults to <code>standard</code> if omitted.
         Cannot be changed after creation.
       </td>
