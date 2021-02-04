@@ -134,7 +134,7 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
       <td>mode</td>
       <td>
         This value needs to to match the booked contract.
-        Possible values: <code>standard</code> and <code>premium</code>.
+        Possible values: <code>standard</code> or <code>premium</code>.
         Defaults to <code>standard</code> if omitted.
         Cannot be changed after creation.
       </td>
