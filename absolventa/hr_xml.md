@@ -320,7 +320,14 @@
     </tr>
     <tr>
       <td>HeaderImageUrl</td>
-      <td>URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> job ads.</td>
+      <td>
+        URL to image that is being displayed at the top of the job ad. Only allowed for <code>premium</code> job ads.
+        <ul>
+          <li>Image resolution: 2340 x 936 px (5:2 aspect ratio)</li>
+          <li>Max. file size: 1 MB</li>
+          <li>Formats: jpg, png</li>
+        </ul>
+      </td>
       <td>Text</td>
       <td>optional</td>
     </tr>
