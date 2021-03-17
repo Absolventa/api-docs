@@ -2,7 +2,13 @@
 
 Our application is able to process data streams served via HTTP of different format. If you already have your
 jobs wrapped into a custom data stream ready to read via HTTP, please [contact our team](mailto:api@absolventa.de) to verify
-if we can handle it.
+if we can handle it. <br>
+Once a connection is established, we regularly (usually once a day) parse the provided feed and adjust the published job offers accordingly:
+<ul>
+  <li>Job offers present in the feed that are not yet published on our platform will be published.</li>
+  <li>Job offers present in the feed that are already published on our platform will be updated according to the provided information.</li>
+  <li>Job offers not present in the feed anymore but published on our platform will be quit.</li>
+</ul>
 
 ### Sample XML format
 
