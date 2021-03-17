@@ -118,7 +118,7 @@ data in this format, we can immediately configure a connection:
   <tbody>
     <tr>
       <td>external_id</td>
-      <td>Your internal identifier of the record</td>
+      <td>Your internal identifier of the record. Has to be unique among published records and is not allowed to change.</td>
       <td>String</td>
       <td>required</td>
     </tr>
