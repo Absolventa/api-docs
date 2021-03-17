@@ -10,7 +10,7 @@
   </PositionRecordInfo>
   <PositionPostings>
     <PositionPosting>
-      <Id validFrom='2019-11-11' validTo='2019-11-15'>
+      <Id validFrom='2019-11-11'>
         <IdValue>2448257</IdValue>
       </Id>
       <Link><![CDATA[]]></Link>
@@ -185,12 +185,6 @@
         been published this field cannot be edited any longer. If left out, we immediately publish your
         job offer.
       </td>
-      <td>Datetime</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>PositionPosting - ValidTo</td>
-      <td>Date on which the job offer stops being published to our platform.</td>
       <td>Datetime</td>
       <td>optional</td>
     </tr>

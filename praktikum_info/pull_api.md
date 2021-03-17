@@ -18,8 +18,6 @@ data in this format, we can immediately configure a connection:
 
     <application_email>elaine.marley@absolventa.de</application_email>
     <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
-    <started_at>2019-11-11T13:14:40+01:00</started_at>
-    <ended_at>2019-11-15T23:59:59+01:00</ended_at>
 
     <job_offer_locations>
       <job_offer_location>
@@ -225,22 +223,6 @@ data in this format, we can immediately configure a connection:
       <td>color</td>
       <td>Hex code for headline color. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>started_at</td>
-      <td>
-        Date the job offer starts being published to our platform. Note that once the job offer has
-        been published this field cannot be edited any longer. If left out, we immediately publish your
-        job offer.
-      </td>
-      <td>Datetime</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>ended_at</td>
-      <td>Date on which the job offer stops being published to our platform.</td>
-      <td>Datetime</td>
       <td>optional</td>
     </tr>
     <tr>

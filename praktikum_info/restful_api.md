@@ -394,15 +394,6 @@ curl -i -X PUT -H 'Accept: application/xml' -H 'Content-Type: application/xml'
 ### End a job offer
 
 If you want to unpublish a job offer before its natural end of runtime, you can perform a PUT request to the corresponding endpoint as shown below.
-By this endpoint you can also edit the current end date to a new value. To achieve this, wrap your requested datetime wrapped in XML like this and send it
-as data attached to your request:
-
-<code>
-  &ltended_at&gt2019-01-01&lt/ended_at&gt
-</code>
-
-Note that your requested date has to
-be before the job offer's current value of ended_at.
 
 <table>
   <tbody>
@@ -419,17 +410,11 @@ be before the job offer's current value of ended_at.
   </tbody>
 </table>
 
-#### Examples
+#### Example
 
 ```
 curl -X PUT -H 'Accept: application/xml'
             -H 'Content-Type: application/xml'&#x000A;
             -u 28a622e8ea6665433729932112d1d9cc:X
-            https://www.praktikum.info/api/c/job_offers/12345/quit.xml
-
-curl -X PUT -H 'Accept: application/xml'
-            -H 'Content-Type: application/xml'&#x000A;
-            -u 28a622e8ea6665433729932112d1d9cc:X
-            -d '<ended_at>2019-07-28T14:27:31+02:00</ended_at>'
             https://www.praktikum.info/api/c/job_offers/12345/quit.xml
 ```
