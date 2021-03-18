@@ -2,7 +2,16 @@
 
 Our application is able to process data streams served via HTTP of different format. If you already have your
 jobs wrapped into a custom data stream ready to read via HTTP, please [contact our team](mailto:api@absolventa.de) to verify
-if we can handle it.
+if we can handle it. <br>
+Once a connection is established, we regularly (usually once a day) parse the provided feed and adjust the published job offers accordingly:
+<ul>
+  <li>Job offers present in the feed that are not yet published on our platform will be published.</li>
+  <li>Job offers present in the feed that are already published on our platform will be updated according to the provided information.</li>
+  <li>Job offers not present in the feed anymore but published on our platform will be quit.</li>
+</ul>
+Note that job offers can only be published if the booked contract allows for it. If a job offer is still present in a feed
+after its runtime as specified by the contract is over, it will be treated as a new job offer (and hence get newly published
+if the contract still allows for it).
 
 ### Sample XML format
 
@@ -18,8 +27,6 @@ data in this format, we can immediately configure a connection:
 
     <application_email>elaine.marley@absolventa.de</application_email>
     <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
-    <started_at>2019-11-11T13:14:40+01:00</started_at>
-    <ended_at>2019-11-15T23:59:59+01:00</ended_at>
 
     <job_offer_locations>
       <job_offer_location>
@@ -120,7 +127,7 @@ data in this format, we can immediately configure a connection:
   <tbody>
     <tr>
       <td>external_id</td>
-      <td>Your internal identifier of the record</td>
+      <td>Your internal identifier of the record. Has to be unique among published records and is not allowed to change.</td>
       <td>String</td>
       <td>required</td>
     </tr>
@@ -225,22 +232,6 @@ data in this format, we can immediately configure a connection:
       <td>color</td>
       <td>Hex code for headline color. Only allowed for <code>premium</code> job ads.</td>
       <td>Text</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>started_at</td>
-      <td>
-        Date the job offer starts being published to our platform. Note that once the job offer has
-        been published this field cannot be edited any longer. If left out, we immediately publish your
-        job offer.
-      </td>
-      <td>Datetime</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>ended_at</td>
-      <td>Date on which the job offer stops being published to our platform.</td>
-      <td>Datetime</td>
       <td>optional</td>
     </tr>
     <tr>

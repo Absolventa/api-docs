@@ -9,7 +9,6 @@
   <application_email>elaine.marley@absolventa.de</application_email>
   <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
   <started_at>2019-11-11T13:14:40+01:00</started_at>
-  <ended_at>2019-11-15T23:59:59+01:00</ended_at>
 
   <!--
     If the at least one of nodes <city> or <zip> (and optionally street and country) are given
@@ -259,16 +258,6 @@ attributes: <code>href, class, target</code>. All other attributes will get stri
       <td>Date on which the apprenticeship will start. Only relevant for job ads targeted at https://www.azubi.de.</td>
       <td>Datetime</td>
       <td>optional</td>
-    </tr>
-    <tr>
-      <td>ended_at</td>
-      <td>
-        Date on which the job offer stops being published to our platform. If not specified, we will
-        compute and assign the latest point in time that is allowed w.r.t to your contract.
-        Also note that updating the ended_at value is possibly restricted.
-      </td>
-      <td>Datetime</td>
-      <td>optional - we will auto-assign this value if left out and determine the latest possible value.</td>
     </tr>
     <tr>
       <td>application_method</td>
