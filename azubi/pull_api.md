@@ -9,6 +9,9 @@ Once a connection is established, we regularly (usually once a day) parse the pr
   <li>Job offers present in the feed that are already published on our platform will be updated according to the provided information.</li>
   <li>Job offers not present in the feed anymore but published on our platform will be quit.</li>
 </ul>
+Note that job offers can only be published if the booked contract allows for it. If a job offer is still present in a feed
+after its runtime as specified by the contract is over, it will be treated as a new job offer (and hence get newly published
+if the contract still allows for it).
 
 ### Sample Data Format
 
