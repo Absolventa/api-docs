@@ -143,6 +143,27 @@ data in this format, we can immediately configure a connection:
       <td>required</td>
     </tr>
     <tr>
+      <td>application_email</td>
+      <td>E-Mail address potential candidates shall send their applications to</td>
+      <td>String</td>
+      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
+    </tr>
+    <tr>
+      <td>application_url</td>
+      <td>URL pointing to the application online formular of the job offer.</td>
+      <td>String</td>
+      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
+    </tr>
+    <tr>
+      <td>job_offer_locations</td>
+      <td>
+        List of job_offer_location objects. Each job_offer_location contained in the list
+        has to include at least a <code>city</code> and a <code>zip</code> value.
+      </td>
+      <td>job_offer_location object</td>
+      <td>optional</td>
+    </tr>
+    <tr>
       <td>description_headline</td>
       <td>Headline summarizing the introductory description-content.</td>
       <td>Text</td>
@@ -155,14 +176,14 @@ data in this format, we can immediately configure a connection:
       <td>required</td>
     </tr>
     <tr>
-      <td>company_description_headline</td>
-      <td>Headline summarizing the company_description-content.</td>
+      <td>tasks_headline</td>
+      <td>Headline summarizing the tasks-content.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
     <tr>
-      <td>company_description</td>
-      <td>Description text of your company. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>tasks</td>
+      <td>Text summarizing the job tasks of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -175,18 +196,6 @@ data in this format, we can immediately configure a connection:
     <tr>
       <td>qualifications</td>
       <td>Text summarizing the requirements of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
-      <td>Text</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>tasks_headline</td>
-      <td>Headline summarizing the tasks-content.</td>
-      <td>Text</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>tasks</td>
-      <td>Text summarizing the job tasks of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -211,6 +220,18 @@ data in this format, we can immediately configure a connection:
     <tr>
       <td>contact</td>
       <td>Text summarizing the contact information for the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>company_description_headline</td>
+      <td>Headline summarizing the company_description-content.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>company_description</td>
+      <td>Description text of your company. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -243,27 +264,6 @@ data in this format, we can immediately configure a connection:
       <td>custom_company_title</td>
       <td>Custom company title, e.g. to display a specific branch's or subsidiary's name.</td>
       <td>Text</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>application_url</td>
-      <td>URL pointing to the application online formular of the job offer.</td>
-      <td>String</td>
-      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
-    </tr>
-    <tr>
-      <td>application_email</td>
-      <td>E-Mail address potential candidates shall send their applications to</td>
-      <td>String</td>
-      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
-    </tr>
-    <tr>
-      <td>job_offer_locations</td>
-      <td>
-        List of job_offer_location objects. Each job_offer_location contained in the list
-        has to include at least a <code>city</code> and a <code>zip</code> value.
-      </td>
-      <td>job_offer_location object</td>
       <td>optional</td>
     </tr>
     <tr>
