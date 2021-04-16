@@ -108,12 +108,13 @@ data in this format, we can immediately configure a connection:
     <color>#efefef</color>
     <custom_company_title>Threepwood GmbH</custom_company_title>
 
-    <!--attributes only relevant for azubi.de:  -->
+    <!-- attributes only relevant for azubi.de -->
     <apprenticeship_started_at type='datetime'>
       2017-07-07T00:00:00+02:00
     </apprenticeship_started_at>
     <minimal_degree>basic</minimal_degree>
     <duration>36</duration>
+    <!-- end of attributes only relevant for azubi.de -->
   </job_offer>
   <job_offer>
     ...
