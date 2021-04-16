@@ -234,6 +234,12 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
+      <td>custom_company_title</td>
+      <td>Custom company title, e.g. to display a specific branch's or subsidiary's name.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
       <td>application_url</td>
       <td>URL pointing to the application online formular of the job offer.</td>
       <td>String</td>

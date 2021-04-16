@@ -248,6 +248,12 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
+      <td>custom_company_title</td>
+      <td>Custom company title, e.g. to display a specific branch's or subsidiary's name.</td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
       <td>apprenticeship_started_at</td>
       <td>Date on which the apprenticeship will start. Only relevant for job ads targeted at https://www.azubi.de.</td>
       <td>Datetime</td>
