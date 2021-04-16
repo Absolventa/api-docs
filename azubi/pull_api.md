@@ -106,7 +106,7 @@ data in this format, we can immediately configure a connection:
     <color>#efefef</color>
     <custom_company_title>Threepwood GmbH</custom_company_title>
 
-    <!--Fields only relevant for azubi.de:  -->
+    <!--attributes only relevant for azubi.de:  -->
     <apprenticeship_started_at type='datetime'>
       2017-07-07T00:00:00+02:00
     </apprenticeship_started_at>
@@ -267,14 +267,17 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
+	    <th colspan="4">Attributes only relevant for azubi.de:</th>
+    </tr>
+    <tr>
       <td>apprenticeship_started_at</td>
-      <td>Date on which the apprenticeship will start. Only relevant for job ads targeted at https://www.azubi.de.</td>
+      <td>Date on which the apprenticeship will start.</td>
       <td>Datetime</td>
       <td>optional</td>
     </tr>
       <td>minimal_degree</td>
       <td>
-        Minimal graduation degree the candidates should own. Only relevant for job ads targeted at https://www.azubi.de.
+        Minimal graduation degree the candidates should own.
         Possible values:
         <ul>
           <li><code>basic</code> (Hauptschulabschluss)</li>
@@ -288,7 +291,7 @@ data in this format, we can immediately configure a connection:
     <tr>
       <td>duration</td>
       <td>
-        Duration of the apprenticeship in months. Only relevant for job ads targeted at https://www.azubi.de.
+        Duration of the apprenticeship in months.
       </td>
       <td>Integer</td>
       <td>optional</td>
