@@ -260,22 +260,16 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
-      <td>application_method</td>
-      <td>Info about the application method.</td>
-      <td>String</td>
-      <td>required (Either <code>email</code> or <code>url</code>)</td>
-    </tr>
-    <tr>
       <td>application_url</td>
       <td>URL pointing to the application online formular of the job offer.</td>
       <td>String</td>
-      <td>required (If application_method is set to <code>url</code>)</td>
+      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
     </tr>
     <tr>
       <td>application_email</td>
       <td>E-Mail address potential candidates shall send their applications to</td>
       <td>String</td>
-      <td>required (If application_method is set to <code>email</code>)</td>
+      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
     </tr>
     <tr>
       <td>job_offer_locations</td>
