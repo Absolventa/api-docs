@@ -28,9 +28,6 @@ data in this format, we can immediately configure a connection:
     <application_email>elaine.marley@absolventa.de</application_email>
     <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
 
-    <minimal_degree>certificate</minimal_degree>
-    <duration>36</duration>
-
     <job_offer_locations>
       <job_offer_location>
         <city>Berlin</city>
@@ -57,16 +54,6 @@ data in this format, we can immediately configure a connection:
       ]]>
     </description>
 
-    <qualifications_headline>Du bist mutig genug, in allen Ozeanen dieser Welt zu schwimmen?</qualifications_headline>
-    <qualifications>
-      <![CDATA[
-        <ul>
-          <li>Du kannst schwimmen (Seepferdchen notwendig)</li>
-          <li>Ein leichtes Schaukeln ist für dich kein Problem</li>
-        </ul>
-      ]]>
-    </qualifications>
-
     <tasks_headline>Du kannst im Schlaf unter tosendem Sturm problemlos Segel setzen?</tasks_headline>
     <tasks>
       <![CDATA[
@@ -76,6 +63,16 @@ data in this format, we can immediately configure a connection:
         </ul>
       ]]>
     </tasks>
+
+    <qualifications_headline>Du bist mutig genug, in allen Ozeanen dieser Welt zu schwimmen?</qualifications_headline>
+    <qualifications>
+      <![CDATA[
+        <ul>
+          <li>Du kannst schwimmen (Seepferdchen notwendig)</li>
+          <li>Ein leichtes Schaukeln ist für dich kein Problem</li>
+        </ul>
+      ]]>
+    </qualifications>
 
     <benefits_headline>Bestens ausgerüstet!</benefits_headline>
     <benefits>
@@ -88,16 +85,6 @@ data in this format, we can immediately configure a connection:
       ]]>
     </benefits>
 
-    <company_description_headline>Unser Geschäft ist kein Voodoo!</company_description_headline>
-    <company_description>
-      <![CDATA[
-        <p>Marley & Threepwood Ventures - Ihr Partner in Sachen Seefahrt- und Handelsbeziehungen</p>
-      ]]>
-    </company_description>
-
-    <video_url><![CDATA[https://api.example.com/videos/seemannsgarn]]></video_url>
-    <header_image_url><![CDATA[https://api.example.com/content/header_image.jpg]]></header_image_url>
-
     <contact_headline>Frag' unsere Expertin Elaine!</contact_headline>
     <contact>
       <![CDATA[
@@ -107,10 +94,18 @@ data in this format, we can immediately configure a connection:
       ]]>
     </contact>
 
+    <company_description_headline>Unser Geschäft ist kein Voodoo!</company_description_headline>
+    <company_description>
+      <![CDATA[
+        <p>Marley & Threepwood Ventures - Ihr Partner in Sachen Seefahrt- und Handelsbeziehungen</p>
+      ]]>
+    </company_description>
+
+    <video_url><![CDATA[https://api.example.com/videos/seemannsgarn]]></video_url>
+    <header_image_url><![CDATA[https://api.example.com/content/header_image.jpg]]></header_image_url>
     <color>#efefef</color>
-    <custom_company_title>
-      Threepwood GmbH
-    </custom_company_title>
+    <custom_company_title>Threepwood GmbH</custom_company_title>
+
     <apprenticeship_started_at type='datetime'>
       2017-07-07T00:00:00+02:00
     </apprenticeship_started_at>
