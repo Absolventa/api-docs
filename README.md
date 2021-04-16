@@ -13,7 +13,7 @@ your application with our job boards.
 
 https://www.absolventa.de
 
-* Processsing data streams served via HTTP of different format by our [Pull API](absolventa/pull_api.md)
+* Processing data streams served via HTTP of different format by our [Pull API](pull_api.md)
 * [RESTful API](absolventa/restful_api.md) based on XML
 
 <h3>
@@ -22,7 +22,7 @@ https://www.absolventa.de
 
 https://www.azubi.de
 
-* Processsing data streams served via HTTP of different format by our [Pull API](azubi/pull_api.md)
+* Processing data streams served via HTTP of different format by our [Pull API](pull_api.md)
 
 <h3>
 	<img alt="Praktikum.info Logo" src="images/praktikum_info_logo_color.svg" height="30px">
@@ -30,7 +30,7 @@ https://www.azubi.de
 
 https://www.praktikum.info
 
-* Processsing data streams served via HTTP of different format by our [Pull API](praktikum_info/pull_api.md)
+* Processing data streams served via HTTP of different format by our [Pull API](pull_api.md)
 * [RESTful API](praktikum_info/restful_api.md) based on XML
 
 <h3>
@@ -39,4 +39,4 @@ https://www.praktikum.info
 
 https://www.trainee-gefluester.de
 
-* Processsing data streams served via HTTP of different format by our [Pull API](trainee_gefluester/pull_api.md)
+* Processing data streams served via HTTP of different format by our [Pull API](pull_api.md)
