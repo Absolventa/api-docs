@@ -106,15 +106,12 @@ data in this format, we can immediately configure a connection:
     <color>#efefef</color>
     <custom_company_title>Threepwood GmbH</custom_company_title>
 
+    <!--Fields only relevant for azubi.de:  -->
     <apprenticeship_started_at type='datetime'>
       2017-07-07T00:00:00+02:00
     </apprenticeship_started_at>
-    <!--Possible values for minimal degree:  -->
-    <!-- basic (Hauptschulabschluss)  -->
-    <!-- certificate (Mittlere Reife)  -->
-    <!-- graduation ([Fach-]Abitur)  -->
     <minimal_degree>basic</minimal_degree>
-    <duration>36</duration><!-- months -->
+    <duration>36</duration>
   </job_offer>
   <job_offer>
     ...
@@ -249,12 +246,6 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
-      <td>apprenticeship_started_at</td>
-      <td>Date on which the apprenticeship will start. Only relevant for job ads targeted at https://www.azubi.de.</td>
-      <td>Datetime</td>
-      <td>optional</td>
-    </tr>
-    <tr>
       <td>application_url</td>
       <td>URL pointing to the application online formular of the job offer.</td>
       <td>String</td>
@@ -276,15 +267,11 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
-      <td>
-        <span class='label label-info'>duration</span>
-      </td>
-      <td>
-        Duration of the apprenticeship in months. Only relevant for job ads targeted at https://www.azubi.de.
-      </td>
-      <td>Integer</td>
+      <td>apprenticeship_started_at</td>
+      <td>Date on which the apprenticeship will start. Only relevant for job ads targeted at https://www.azubi.de.</td>
+      <td>Datetime</td>
       <td>optional</td>
-    <tr>
+    </tr>
       <td>minimal_degree</td>
       <td>
         Minimal graduation degree the candidates should own. Only relevant for job ads targeted at https://www.azubi.de.
@@ -298,5 +285,13 @@ data in this format, we can immediately configure a connection:
       <td>String</td>
       <td>optional</td>
     </tr>
+    <tr>
+      <td>duration</td>
+      <td>
+        Duration of the apprenticeship in months. Only relevant for job ads targeted at https://www.azubi.de.
+      </td>
+      <td>Integer</td>
+      <td>optional</td>
+    <tr>
   </tbody>
 </table>
