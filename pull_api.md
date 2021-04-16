@@ -269,7 +269,7 @@ data in this format, we can immediately configure a connection:
       <td>optional</td>
     </tr>
     <tr>
-	    <th colspan="4">Attributes only relevant for azubi.de:</th>
+      <th colspan="4">Attributes only relevant for azubi.de:</th>
     </tr>
     <tr>
       <td>apprenticeship_started_at</td>
