@@ -114,6 +114,11 @@ data in this format, we can immediately configure a connection:
     </apprenticeship_started_at>
     <minimal_degree>basic</minimal_degree>
     <duration>36</duration>
+    <salary_first_year>1000</salary_first_year>
+    <salary_second_year>1200</salary_second_year>
+    <salary_third_year>1400</salary_third_year>
+    <salary_forth_year>1600</salary_forth_year>
+
     <!-- end of attributes only relevant for azubi.de -->
   </job_offer>
   <job_offer>
@@ -295,6 +300,14 @@ data in this format, we can immediately configure a connection:
       <td>duration</td>
       <td>
         Duration of the apprenticeship in months.
+      </td>
+      <td>Integer</td>
+      <td>optional</td>
+    <tr>
+    <tr>
+      <td>salary_first_year</td>
+      <td>
+        Salary during the first year of the apprenticeship. The second, third, and forth years can be added in the same way, eg. <code>salary_second_year</code>, etc.
       </td>
       <td>Integer</td>
       <td>optional</td>
