@@ -23,20 +23,3 @@ https://www.absolventa.de
 https://www.azubi.de
 
 * Processing data streams served via HTTP of different format by our [Pull API](pull_api.md)
-
-<h3>
-	<img alt="Praktikum.info Logo" src="images/praktikum_info_logo_color.svg" height="30px">
-</h3>
-
-https://www.praktikum.info
-
-* Processing data streams served via HTTP of different format by our [Pull API](pull_api.md)
-* [RESTful API](praktikum_info/restful_api.md) based on XML
-
-<h3>
-	<img alt="Trainee-gefluester Logo" src="images/trainee_gefluester_logo_color.svg" height="30px">
-</h3>
-
-https://www.trainee-gefluester.de
-
-* Processing data streams served via HTTP of different format by our [Pull API](pull_api.md)
