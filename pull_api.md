@@ -1,5 +1,5 @@
 ## Pull API
-##### Documentation for Absolventa, Azubi.de, Praktikum.info and Trainee-Geflüster
+##### Documentation for Absolventa and Azubi.de
 
 Our application is able to process data streams served via HTTP of different format. If you already have your
 jobs wrapped into a custom data stream ready to read via HTTP, please [contact our team](mailto:api@absolventa.de) to verify

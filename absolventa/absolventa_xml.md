@@ -3,7 +3,7 @@
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <job_offer>
-  <title>Praktikum Seefahrt (w/m/d)</title>
+  <title>Seefahrer:in (w/m/d)</title>
   <mode>premium</mode>
 
   <application_email>elaine.marley@absolventa.de</application_email>
