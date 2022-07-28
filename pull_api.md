@@ -37,12 +37,6 @@ data in this format, we can immediately configure a connection:
         <zip>10405</zip>
         <country>Deutschland</country>
       </job_offer_location>
-      <job_offer_location>
-        <city>Berlin</city>
-        <street>Oranienburger Straße 33</street>
-        <zip>10178</zip>
-        <country>Deutschland</country>
-      </job_offer_location>
     </job_offer_locations>
 
     <description_headline>Komm' an Bord!</description_headline>
@@ -108,6 +102,10 @@ data in this format, we can immediately configure a connection:
     <color>#efefef</color>
     <custom_company_title>Threepwood GmbH</custom_company_title>
 
+    <remote_work>required</remote_work>
+    <work_experience>optional</work_experience>
+    <work_hours>part_time</work_hours>
+
     <!-- attributes only relevant for azubi.de -->
     <apprenticeship_started_at type='datetime'>
       2017-07-07T00:00:00+02:00
@@ -167,6 +165,7 @@ data in this format, we can immediately configure a connection:
       <td>
         List of job_offer_location objects. Each job_offer_location contained in the list
         has to include at least a <code>city</code> and a <code>zip</code> value.
+        Usually, only one job_offer_location object is allowed.
       </td>
       <td>job_offer_location object</td>
       <td>optional</td>
@@ -246,7 +245,7 @@ data in this format, we can immediately configure a connection:
     <tr>
       <td>video_url</td>
       <td>URL to embeddable video content.</td>
-      <td>Text</td>
+      <td>String</td>
       <td>optional</td>
     </tr>
     <tr>
@@ -259,19 +258,61 @@ data in this format, we can immediately configure a connection:
           <li>Formats: jpg, png</li>
         </ul>
       </td>
-      <td>Text</td>
+      <td>String</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>color</td>
       <td>Hex code for headline color.</td>
-      <td>Text</td>
+      <td>String</td>
       <td>optional</td>
     </tr>
     <tr>
       <td>custom_company_title</td>
       <td>Custom company title, e.g. to display a specific branch's or subsidiary's name.</td>
-      <td>Text</td>
+      <td>String</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>remote_work</td>
+      <td>
+        Possibilities to work remotely.
+        Possible values:
+        <ul>
+          <li><code>optional</code></li>
+          <li><code>required</code> </li>
+          <li><code>unavailable</code></li>
+        </ul>
+      </td>
+      <td>String</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>work_experience</td>
+      <td>
+        Prior work experience.
+        Possible values:
+        <ul>
+          <li><code>optional</code></li>
+          <li><code>preferred</code> </li>
+          <li><code>required</code></li>
+        </ul>
+      </td>
+      <td>String</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>work_hours</td>
+      <td>
+        Part-time or full-time position.
+        Possible values:
+        <ul>
+          <li><code>full_time</code></li>
+          <li><code>optionally_part_time</code> </li>
+          <li><code>part_time</code></li>
+        </ul>
+      </td>
+      <td>String</td>
       <td>optional</td>
     </tr>
     <tr>
