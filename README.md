@@ -14,7 +14,7 @@ your application with our job boards.
 https://www.absolventa.de
 
 * Processing data streams served via HTTP of different format by our [Pull API](pull_api.md)
-* [RESTful API](absolventa/restful_api.md) based on XML
+* [RESTful API](absolventa/restful_api.md) based on XML (**deprecated**)
 
 <h3>
 	<img alt="Azubi Logo" src="images/azubi_logo_color.svg" height="30px">

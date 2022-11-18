@@ -1,5 +1,7 @@
 # Absolventa XML
 
+*This file belongs to the **deprecated** RESTful API. We advise customers to use our [Pull API](../pull_api.md).*
+
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <job_offer>
