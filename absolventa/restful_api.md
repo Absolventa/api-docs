@@ -1,5 +1,7 @@
 # ABSOLVENTA RESTful API
 
+*Please note that the RESTful API is **deprecated**. We advise customers to use our [Pull API](../pull_api.md).*
+
 ## Data formats
 
 Our RESTful API accepts two different XML based data formats

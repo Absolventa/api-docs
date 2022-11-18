@@ -1,5 +1,7 @@
 # HR-XML
 
+*This file belongs to the **deprecated** RESTful API. We advise customers to use our [Pull API](../pull_api.md).*
+
 ```XML
 <?xml version='1.0' encoding='utf-8' ?>
 <PositionOpening xmlns:datetime='http://exslt.org/dates-and-times' xmlns:ns1='http://ns.hr-xml.org' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns='http://ns.hr-xml.org' xsi:schemaLocation='http://ns.hr-xml.org/2_4/HR-XML-2_4/StandAlone/PositionOpening.xsd'>
