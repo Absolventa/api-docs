@@ -178,7 +178,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>description</td>
-      <td>Description text of your job ad. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Description text of your job ad. Simple HTML tags such as <code>strong, em, u, i, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>required</td>
     </tr>
@@ -190,7 +190,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>tasks</td>
-      <td>Text summarizing the job tasks of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text summarizing the job tasks of the candiates. Simple HTML tags such as <code>strong, em, u, i, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -202,7 +202,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>qualifications</td>
-      <td>Text summarizing the requirements of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text summarizing the requirements of the candiates. Simple HTML tags such as <code>strong, em, u, i, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -214,7 +214,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>benefits</td>
-      <td>Text summarizing the job benefits of the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text summarizing the job benefits of the candiates. Simple HTML tags such as <code>strong, em, u, i, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -226,7 +226,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>contact</td>
-      <td>Text summarizing the contact information for the candiates. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Text summarizing the contact information for the candiates. Simple HTML tags such as <code>strong, em, u, i, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
@@ -238,7 +238,7 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>company_description</td>
-      <td>Description text of your company. Simple HTML tags such as <code>strong, em, u, ol, ul, li, p, br, a</code> are allowed.</td>
+      <td>Description text of your company. Simple HTML tags such as <code>strong, em, u, i, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
       <td>optional</td>
     </tr>
