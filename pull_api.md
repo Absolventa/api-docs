@@ -322,7 +322,7 @@ data in this format, we can immediately configure a connection:
       <td>apprenticeship_started_at</td>
       <td>Date on which the apprenticeship will start.</td>
       <td>Datetime</td>
-      <td>optional</td>
+      <td>required for azubi.de</td>
     </tr>
       <td>minimal_degree</td>
       <td>
