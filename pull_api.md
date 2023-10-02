@@ -29,6 +29,7 @@ data in this format, we can immediately configure a connection:
 
     <application_email>elaine.marley@absolventa.de</application_email>
     <application_url><![CDATA[https://www.example.com/jobs/seefahrt/apply]]></application_url>
+    <application_system_email>guybrush.threepwood@absolventa.de</application_system_email>
 
     <job_offer_locations>
       <job_offer_location>
@@ -105,6 +106,7 @@ data in this format, we can immediately configure a connection:
     <remote_work>required</remote_work>
     <work_experience>optional</work_experience>
     <work_hours>part_time</work_hours>
+    <without_cover_letter>true</without_cover_letter>
 
     <!-- attributes only relevant for azubi.de -->
     <apprenticeship_started_at type='datetime'>
@@ -150,15 +152,21 @@ data in this format, we can immediately configure a connection:
     </tr>
     <tr>
       <td>application_email</td>
-      <td>E-Mail address potential candidates shall send their applications to</td>
+      <td>Email address potential candidates shall send their applications to.</td>
       <td>String</td>
-      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
+      <td>required (Either application_url, application_email or application_system_email is needed. If several are provided, we prioritize application_url, then application_email.)</td>
     </tr>
     <tr>
       <td>application_url</td>
       <td>URL pointing to the application online formular of the job offer.</td>
       <td>String</td>
-      <td>required (Either application_url or application_email is needed. If both are provided, we use the URL.)</td>
+      <td>required (Either application_url, application_email or application_system_email is needed. If several are provided, we prioritize application_url, then application_email.)</td>
+    </tr>
+    <tr>
+      <td>application_system_email</td>
+      <td>Email address where applications are forwarded to from the job board's internal application system.</td>
+      <td>String</td>
+      <td>required (Either application_url, application_email or application_system_email is needed. If several are provided, we prioritize application_url, then application_email.)</td>
     </tr>
     <tr>
       <td>job_offer_locations</td>
@@ -311,6 +319,14 @@ data in this format, we can immediately configure a connection:
           <li><code>optionally_part_time</code> </li>
           <li><code>part_time</code></li>
         </ul>
+      </td>
+      <td>String</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>without_cover_letter</td>
+      <td>
+        Whether cover letter can be omitted. <code>true</code> or <code>false</code> (as strings) are possible values. Defaults to <code>false</code>, i.e. application requires cover letter.
       </td>
       <td>String</td>
       <td>optional</td>
