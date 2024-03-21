@@ -108,7 +108,23 @@ data in this format, we can immediately configure a connection:
     <work_hours>part_time</work_hours>
     <without_cover_letter>true</without_cover_letter>
 
+    <!-- attributes only relevant for absolventa.de -->
+
+    <!-- with fixed salary -->
+    <salary_information_type>fixed</salary_information_type>
+    <salary_type>monthly</salary_type>
+    <salary_fixed>3000</salary_fixed>
+
+    <!-- with salary range -->
+    <salary_information_type>range</salary_information_type>
+    <salary_type>yearly</salary_type>
+    <salary_min>50000</salary_min>
+    <salary_max>60000</salary_max>
+
+    <!-- end of attributes only relevant for absolventa.de -->
+
     <!-- attributes only relevant for azubi.de -->
+
     <apprenticeship_started_at type='datetime'>
       2017-07-07T00:00:00+02:00
     </apprenticeship_started_at>
@@ -331,6 +347,59 @@ data in this format, we can immediately configure a connection:
       <td>String</td>
       <td>optional</td>
     </tr>
+    <tr>
+      <th colspan="4">Attributes only relevant for absolventa.de:</th>
+    </tr>
+    <tr>
+      <td>salary_information_type</td>
+      <td>
+        Type of salary information. Possible values:
+        <ul>
+          <li><code>fixed</code> (Precise, fixed salary information available)</li>
+          <li><code>range</code> (Salary information available as a range of two values)</li>
+        </ul>
+        Will default to an unset value <code>not_set</code>
+      </td>
+      <td>String</td>
+      <td>optional</td>
+    </tr>
+      <td>salary_type</td>
+      <td>
+        Type of given salary.
+        Possible values:
+        <ul>
+          <li><code>yearly</code></li>
+          <li><code>monthly</code></li>
+          <li><code>hourly</code></li>
+        </ul>
+      </td>
+      <td>String</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>salary_fixed</td>
+      <td>
+        The fixed salary in EUR.
+      </td>
+      <td>Integer</td>
+      <td>only required if <code>salary_information_type</code> is <code>fixed</code></td>
+    <tr>
+    <tr>
+      <td>salary_min</td>
+      <td>
+        The lower bound of the salary range in EUR.
+      </td>
+      <td>Integer</td>
+      <td>only required if <code>salary_information_type</code> is <code>range</code></td>
+    <tr>
+    <tr>
+      <td>salary_max</td>
+      <td>
+        The upper bound of the salary range in EUR.
+      </td>
+      <td>Integer</td>
+      <td>only required if <code>salary_information_type</code> is <code>range</code></td>
+    <tr>
     <tr>
       <th colspan="4">Attributes only relevant for azubi.de:</th>
     </tr>
