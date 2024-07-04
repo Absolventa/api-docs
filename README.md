@@ -1,5 +1,9 @@
 <div align="center">
-  <img alt="Absolventa API" src="images/api_logo.svg" width="200px">
+	<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/api_logo--light.svg">
+    <source media="(prefers-color-scheme: light)" srcset="images/api_logo.svg">
+    <img alt="Logo" src="images/api_logo.svg" width="200px">
+  </picture>
   <h1>Absolventa API documentation</h1>
 </div>
 <br>
