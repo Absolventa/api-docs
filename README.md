@@ -10,22 +10,18 @@
 This repository provides information material on how to integrate
 your application with our job boards.
 
-<a href="https://www.absolventa.de" target="_blank">
-  <h3>
-	  <img alt="Absolventa Logo" src="images/absolventa_logo_color.svg" height="30px">
-  </h3>
-</a>
+<h3>
+	<img alt="Absolventa Logo" src="images/absolventa_logo_color.svg" height="30px">
+</h3>
 
 https://www.absolventa.de
 
 * Processing data streams served via HTTP of different format by our [Pull API](pull_api.md)
 * [RESTful API](absolventa/restful_api.md) based on XML (**deprecated**)
 
-<a href="https://www.azubi.de" target="_blank">
-  <h3>
-	  <img alt="Azubi Logo" src="images/azubi_logo_color.svg" height="30px">
-  </h3>
-</a>
+<h3>
+  <img alt="Azubi Logo" src="images/azubi_logo_color.svg" height="30px">
+</h3>
 
 https://www.azubi.de
 
