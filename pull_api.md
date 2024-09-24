@@ -136,6 +136,15 @@ data in this format, we can immediately configure a connection:
     <salary_forth_year>1600</salary_forth_year>
 
     <!-- end of attributes only relevant for azubi.de -->
+
+    <!-- attributes only relevant for agencies -->
+
+    <company_title>Marley & Threepwood Ventures GmbH</company_title>
+    <company_external_id>1234</company_external_id>
+    <company_logo_url>https://api.example.com/company_logo.jpg</company_logo_url>
+    <agency_order_number>12345abc</agency_order_number>
+
+    <!-- end of attributes only relevant for agencies -->
   </job_offer>
   <job_offer>
     ...
@@ -442,6 +451,7 @@ data in this format, we can immediately configure a connection:
 </table>
 
 ### Additional data fields for agencies
+These fields are only relevant for customers that post job offers on behalf of multiple companies.
 <table>
   <thead>
     <tr>
