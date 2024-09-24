@@ -139,9 +139,9 @@ data in this format, we can immediately configure a connection:
 
     <!-- attributes only relevant for agencies -->
 
-    <company_title>Marley & Threepwood Ventures GmbH</company_title>
+    <company_title><![CDATA[Marley & Threepwood Ventures GmbH]]></company_title>
     <company_external_id>1234</company_external_id>
-    <company_logo_url>https://api.example.com/company_logo.jpg</company_logo_url>
+    <company_logo_url><![CDATA[https://api.example.com/company_logo.jpg]]></company_logo_url>
     <agency_order_number>12345abc</agency_order_number>
 
     <!-- end of attributes only relevant for agencies -->
