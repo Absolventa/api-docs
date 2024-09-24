@@ -136,6 +136,15 @@ data in this format, we can immediately configure a connection:
     <salary_forth_year>1600</salary_forth_year>
 
     <!-- end of attributes only relevant for azubi.de -->
+
+    <!-- attributes only relevant for agencies -->
+
+    <company_title><![CDATA[Marley & Threepwood Ventures GmbH]]></company_title>
+    <company_external_id>1234</company_external_id>
+    <company_logo_url><![CDATA[https://api.example.com/company_logo.jpg]]></company_logo_url>
+    <agency_order_number>12345abc</agency_order_number>
+
+    <!-- end of attributes only relevant for agencies -->
   </job_offer>
   <job_offer>
     ...
@@ -438,5 +447,49 @@ data in this format, we can immediately configure a connection:
       <td>Integer</td>
       <td>optional</td>
     <tr>
+  </tbody>
+</table>
+
+### Additional data fields for agencies
+These fields are only relevant for customers that post job offers on behalf of multiple companies.
+<table>
+  <thead>
+    <tr>
+      <th>attribute</th>
+      <th>value</th>
+      <th>type</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>company_title</td>
+      <td>The name of the company for which the job is posted.</td>
+      <td>String</td>
+      <td>required</td>
+    </tr>
+    <tr>
+      <td>company_external_id</td>
+      <td>Your internal, unique identifier of the company. Should remain consistent across all job offers for the same company.</td>
+      <td>String</td>
+      <td>required (If you don't use IDs, the <code>company_title</code> can be given.) </td>
+    </tr>
+    <tr>
+      <td>company_logo_url</td>
+      <td>URL to the company's logo image to be displayed with the job posting.
+        <ul>
+          <li>Image resolution: min. 400 x 400 px</li>
+          <li>Formats: jpg, png</li>
+        </ul>
+      </td>
+      <td>Text</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>agency_order_number</td>
+      <td>Order number</td>
+      <td>String</td>
+      <td>optional</td>
+    </tr>
   </tbody>
 </table>
