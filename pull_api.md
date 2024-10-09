@@ -133,7 +133,7 @@ data in this format, we can immediately configure a connection:
     <salary_first_year>1000</salary_first_year>
     <salary_second_year>1200</salary_second_year>
     <salary_third_year>1400</salary_third_year>
-    <salary_forth_year>1600</salary_forth_year>
+    <salary_fourth_year>1600</salary_fourth_year>
 
     <!-- end of attributes only relevant for azubi.de -->
 
