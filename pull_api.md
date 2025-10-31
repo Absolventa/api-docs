@@ -425,7 +425,8 @@ data in this format, we can immediately configure a connection:
         <ul>
           <li><code>basic</code> (Hauptschulabschluss)</li>
           <li><code>certificate</code> (Mittlere Reife)</li>
-          <li><code>graduation</code> ([Fach-]Abitur)</li>
+          <li><code>graduation</code> (Fachabitur)</li>
+          <li><code>abitur</code> (Abitur)</li>
         </ul>
       </td>
       <td>String</td>
