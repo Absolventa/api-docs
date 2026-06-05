@@ -106,7 +106,6 @@ data in this format, we can immediately configure a connection:
     <remote_work>required</remote_work>
     <work_experience>optional</work_experience>
     <work_hours>part_time</work_hours>
-    <without_cover_letter>true</without_cover_letter>
 
     <!-- attributes only relevant for absolventa.de -->
 
@@ -344,14 +343,6 @@ data in this format, we can immediately configure a connection:
           <li><code>optionally_part_time</code> </li>
           <li><code>part_time</code></li>
         </ul>
-      </td>
-      <td>String</td>
-      <td>optional</td>
-    </tr>
-    <tr>
-      <td>without_cover_letter</td>
-      <td>
-        Whether cover letter can be omitted. <code>true</code> or <code>false</code> (as strings) are possible values. Defaults to <code>false</code>, i.e. application requires cover letter.
       </td>
       <td>String</td>
       <td>optional</td>
