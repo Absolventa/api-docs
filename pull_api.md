@@ -133,6 +133,27 @@ data in this format, we can immediately configure a connection:
     <salary_second_year>1200</salary_second_year>
     <salary_third_year>1400</salary_third_year>
     <salary_fourth_year>1600</salary_fourth_year>
+    <application_fields>
+      <application_field>
+        <identifier>phone</identifier>
+      <application_field>
+      <application_field>
+        <identifier>german_level</identifier>
+        <minimal_option>good</minimal_option>
+      <application_field>
+      <application_field>
+        <identifier>drivers_license</identifier>
+        <minimal_option>in_progress</minimal_option>
+      <application_field>
+      <application_field>
+        <identifier>apprenticeship_authorization</identifier>
+        <minimal_option>none</minimal_option>
+      <application_field>
+      <application_field>
+        <identifier>distance</identifier>
+        <minimal_option>50</minimal_option>
+      <application_field>
+    </application_fields>
 
     <!-- end of attributes only relevant for azubi.de -->
 
@@ -439,6 +460,45 @@ data in this format, we can immediately configure a connection:
       <td>Integer</td>
       <td>optional</td>
     <tr>
+    <tr>
+      <td>application_fields</td>
+      <td>
+        List of application_field objects. Adds additional fields either to the quick apply form, or prompts the user to fill out those fields before redirecting to your desired application method. Minimal options represent your requirements vis-a-vis the applicant.
+      </td>
+      <td>application_field_objects</td>
+      <td>optional</td>
+    </tr>
+    <tr>
+      <td>application_field</td>
+      <td>
+        The following application_fields are valid identfiers with their valid minimal options
+        <ul>
+          <li>
+            <code>apprenticeship_authorization</code></br>
+            (available, in_progress, none)
+          </li>
+          <li>
+            <code>distance</code> to workplace in km </br>
+              (250, 100, 50, 25, 10)
+          </li>
+          <li>
+            <code>drivers_license</code></br>
+            (available, in_progress, none)
+          </li>
+          <li>
+            <code>german_level</code></br>
+            (native business fluent good basic none)
+          </li>
+          <li>
+            <code>phone</code> </br>
+            No minimal option, the present identifier suffices to activate the field.
+          </li>
+        </ul>
+      </td>
+      <td>application_field_object</td>
+      <td>optional</td>
+    </tr>
+
   </tbody>
 </table>
 
