@@ -233,7 +233,7 @@ data in this format, we can immediately configure a connection:
       <td>description</td>
       <td>Description text of your job ad. Simple HTML tags such as <code>strong, em, u, i, ol, ul, li, p, br, a</code> are allowed.</td>
       <td>Text</td>
-      <td>required</td>
+      <td>optional</td>
     </tr>
     <tr>
       <td>tasks_headline</td>
